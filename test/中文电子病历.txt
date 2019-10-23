@@ -1,0 +1,17 @@
+运行main即可
+若需训练模型，将main.py中的两个false改为true即可
+
+
+他最近头痛,流鼻涕,估计是发烧了
+{'string': '他最近头痛,流鼻涕,估计是发烧了', 'entities': [{'word': '头痛', 'start': 3, 'end': 5, 'type': 'SIGNS'}, {'word': '流鼻涕', 'start': 6, 'end': 9, 'type': 'SIGNS'}, {'word': '发烧', 'start': 13, 'end': 15, 'type': 'SIGNS'}]}
+
+他骨折了,可能需要拍片
+{'string': '他骨折了,可能需要拍片', 'entities': [{'word': '骨折', 'start': 1, 'end': 3, 'type': 'SIGNS'}, {'word': '片', 'start': 9, 'end': 11, 'type': 'CHECK'}]}
+
+口腔溃疡可能需要多吃维生素
+{'string': '口腔溃疡可能需要多吃维生素', 'entities': [{'word': '口腔溃疡', 'start': 0, 'end': 4, 'type': 'SIGNS'}, {'word': '维生素', 'start': 10, 'end': 13, 'type': 'TREATMENT'}]}
+
+他感觉喉咙痒，然后去医院检查，发现是支气管肺炎，需要吃牛黄蛇胆川贝片。
+
+{'string': '他感觉喉咙痒,然后去医院检查,发现是支气管肺炎,需要吃牛黄蛇胆川贝片。', 'entities': [{'word': '支气管', 'start': 18, 'end': 21, 'type': 'BODY'}, {'word': '胆川贝', 'start': 29, 'end': 33, 'type': 'TREATMENT'}, {'word': '片', 'start': 29, 'end': 34, 'type': 'CHECK'}]}
+
