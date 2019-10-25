@@ -16,7 +16,7 @@ from utils import print_config, save_config, load_config, test_ner
 from data_utils import load_word2vec, create_input, input_from_line, BatchManager
 
 flags = tf.app.flags
-＃https://blog.csdn.net/dcrmg/article/details/79658725
+# https://blog.csdn.net/dcrmg/article/details/79658725
 flags.DEFINE_boolean("clean",       False,      "clean train folder")
 flags.DEFINE_boolean("train",       False,      "Wither train the model")
 # configurations for the model
@@ -221,7 +221,7 @@ def main(_):
     else:
         evaluate_line()
 
-
+# https://blog.csdn.net/yjk13703623757/article/details/77918633
 if __name__ == "__main__":
     tf.app.run(main)
 
