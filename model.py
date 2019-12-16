@@ -28,7 +28,7 @@ class Model(object):
         self.best_test_f1 = tf.Variable(0.0, trainable=False)
         self.initializer = initializers.xavier_initializer()
 
-        # add placeholders for the model
+        # add placeholders for the model  为模型添加占位符
 
         self.char_inputs = tf.placeholder(dtype=tf.int32,
                                           shape=[None, None],
@@ -40,7 +40,7 @@ class Model(object):
         self.targets = tf.placeholder(dtype=tf.int32,
                                       shape=[None, None],
                                       name="Targets")
-        # dropout keep prob
+        # dropout keep prob 辍学保持概率
         self.dropout = tf.placeholder(dtype=tf.float32,
                                       name="Dropout")
 
@@ -50,19 +50,19 @@ class Model(object):
         self.batch_size = tf.shape(self.char_inputs)[0]
         self.num_steps = tf.shape(self.char_inputs)[-1]
 
-        # embeddings for chinese character and segmentation representation
+        # embeddings for chinese character and segmentation representation 汉字嵌入和分割表示
         embedding = self.embedding_layer(self.char_inputs, self.seg_inputs, config)
 
-        # apply dropout before feed to lstm layer
+        # apply dropout before feed to lstm layer 在将提要应用于lstm层之前应用dropout
         lstm_inputs = tf.nn.dropout(embedding, self.dropout)
 
-        # bi-directional lstm layer
+        # bi-directional lstm layer  双向lstm层
         lstm_outputs = self.biLSTM_layer(lstm_inputs, self.lstm_dim, self.lengths)
 
-        # logits for tags
+        # logits for tags 登录标签
         self.logits = self.project_layer(lstm_outputs)
 
-        # loss of the model
+        # loss of the model 模型的损失
         self.loss = self.loss_layer(self.logits, self.lengths)
 
         with tf.variable_scope("optimizer"):
@@ -76,20 +76,20 @@ class Model(object):
             else:
                 raise KeyError
 
-            # apply grad clip to avoid gradient explosion
+            # apply grad clip to avoid gradient explosion  应用毕业剪辑，以避免梯度爆炸
             grads_vars = self.opt.compute_gradients(self.loss)
             capped_grads_vars = [[tf.clip_by_value(g, -self.config["clip"], self.config["clip"]), v]
                                  for g, v in grads_vars]
             self.train_op = self.opt.apply_gradients(capped_grads_vars, self.global_step)
 
-        # saver of the model
+        # saver of the model  模型的保护者
         self.saver = tf.train.Saver(tf.global_variables(), max_to_keep=5)
 
     def embedding_layer(self, char_inputs, seg_inputs, config, name=None):
         """
-        :param char_inputs: one-hot encoding of sentence
-        :param seg_inputs: segmentation feature
-        :param config: wither use segmentation feature
+        :param char_inputs: one-hot encoding of sentence  句子的一键编码
+        :param seg_inputs: segmentation feature  细分功能
+        :param config: wither use segmentation feature 枯萎使用细分功能
         :return: [1, num_steps, embedding size], 
         """
 
@@ -134,7 +134,7 @@ class Model(object):
 
     def project_layer(self, lstm_outputs, name=None):
         """
-        hidden layer between lstm layer and logits
+        hidden layer between lstm layer and logits  lstm层和logits之间的隐藏层
         :param lstm_outputs: [batch_size, num_steps, emb_size] 
         :return: [batch_size, num_steps, num_tags]
         """
@@ -148,7 +148,7 @@ class Model(object):
                 output = tf.reshape(lstm_outputs, shape=[-1, self.lstm_dim*2])
                 hidden = tf.tanh(tf.nn.xw_plus_b(output, W, b))
 
-            # project to score of tags
+            # project to score of tags  标签得分项目
             with tf.variable_scope("logits"):
                 W = tf.get_variable("W", shape=[self.lstm_dim, self.num_tags],
                                     dtype=tf.float32, initializer=self.initializer)
@@ -162,13 +162,13 @@ class Model(object):
 
     def loss_layer(self, project_logits, lengths, name=None):
         """
-        calculate crf loss
+        calculate crf loss  计算crf损失
         :param project_logits: [1, num_steps, num_tags]
         :return: scalar loss
         """
         with tf.variable_scope("crf_loss"  if not name else name):
             small = -1000.0
-            # pad logits for crf loss
+            # pad logits for crf loss  填充logits以减少crf损失
             start_logits = tf.concat(
                 [small * tf.ones(shape=[self.batch_size, 1, self.num_tags]), tf.zeros(shape=[self.batch_size, 1, 1])], axis=-1)
             pad_logits = tf.cast(small * tf.ones([self.batch_size, self.num_steps, 1]), tf.float32)
@@ -190,9 +190,9 @@ class Model(object):
 
     def create_feed_dict(self, is_train, batch):
         """
-        :param is_train: Flag, True for train batch
-        :param batch: list train/evaluate data 
-        :return: structured data to feed
+        :param is_train: Flag, True for train batch  标记，对于火车批次为True
+        :param batch: list train/evaluate data   列出训练/评估数据
+        :return: structured data to feed  要馈送的结构化数据
         """
         _, chars, segs, tags = batch
         feed_dict = {
@@ -207,9 +207,9 @@ class Model(object):
 
     def run_step(self, sess, is_train, batch):
         """
-        :param sess: session to run the batch
-        :param is_train: a flag indicate if it is a train batch
-        :param batch: a dict containing batch data
+        :param sess: session to run the batch　　会话以运行批处理
+        :param is_train: a flag indicate if it is a train batch　　一个标志指示它是否是火车批次
+        :param batch: a dict containing batch data　　包含批处理数据的字典
         :return: batch result, loss of the batch or logits
         """
         feed_dict = self.create_feed_dict(is_train, batch)
@@ -229,7 +229,7 @@ class Model(object):
         :param matrix: transaction matrix for inference
         :return:
         """
-        # inference final labels usa viterbi Algorithm
+        # inference final labels usa viterbi Algorithm　　推断最终标签美国维特比算法
         paths = []
         small = -1000.0
         start = np.asarray([[small]*self.num_tags +[0]])
@@ -245,10 +245,10 @@ class Model(object):
 
     def evaluate(self, sess, data_manager, id_to_tag):
         """
-        :param sess: session  to run the model 
-        :param data: list of data
-        :param id_to_tag: index to tag name
-        :return: evaluate result
+        :param sess: session  to run the model 　会话以运行模型
+        :param data: list of data　　数据清单
+        :param id_to_tag: index to tag name　　标签名称索引
+        :return: evaluate result　评价结果
         """
         results = []
         trans = self.trans.eval()

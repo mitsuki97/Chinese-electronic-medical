@@ -1,13 +1,22 @@
 # Python version of the evaluation script from CoNLL'00-
 # Originates from: https://github.com/spyysalo/conlleval.py
 
-
 # Intentional differences:
 # - accept any space as delimiter by default
 # - optional file argument (default STDIN)
 # - option to set boundary (-b argument)
 # - LaTeX output (-l argument) not supported
 # - raw tags (-r argument) not supported
+
+# CoNLL'00-中的Python版本的评估脚本
+# 起源于：https://github.com/spyysalo/conlleval.py
+
+# 故意差异：
+# -默认接受任何空格作为分隔符
+# -可选文件参数（默认为STDIN）
+# -设置边界的选项（-b参数）
+# -不支持LaTeX输出（-l参数）
+# -不支持原始标签（-r参数）
 
 import sys
 import re
@@ -25,13 +34,13 @@ Metrics = namedtuple('Metrics', 'tp fp fn prec rec fscore')
 
 class EvalCounts(object):
     def __init__(self):
-        self.correct_chunk = 0    # number of correctly identified chunks
-        self.correct_tags = 0     # number of correct chunk tags
-        self.found_correct = 0    # number of chunks in corpus
-        self.found_guessed = 0    # number of identified chunks
-        self.token_counter = 0    # token counter (ignores sentence breaks)
+        self.correct_chunk = 0    # number of correctly identified chunks 正确识别的块数
+        self.correct_tags = 0     # number of correct chunk tags 正确的块标签数量
+        self.found_correct = 0    # number of chunks in corpus 语料中的块数
+        self.found_guessed = 0    # number of identified chunks 识别的块数
+        self.token_counter = 0    # token counter (ignores sentence breaks) 令牌计数器（忽略断句）
 
-        # counts by type
+        # counts by type 按类型计数
         self.t_correct_chunk = defaultdict(int)
         self.t_found_correct = defaultdict(int)
         self.t_found_guessed = defaultdict(int)
@@ -64,12 +73,12 @@ def evaluate(iterable, options=None):
         options = parse_args([])    # use defaults
 
     counts = EvalCounts()
-    num_features = None       # number of features per line
-    in_correct = False        # currently processed chunks is correct until now
-    last_correct = 'O'        # previous chunk tag in corpus
-    last_correct_type = ''    # type of previously identified chunk tag
-    last_guessed = 'O'        # previously identified chunk tag
-    last_guessed_type = ''    # type of previous chunk tag in corpus
+    num_features = None       # number of features per line  每行特征数
+    in_correct = False        # currently processed chunks is correct until now  到目前为止，当前处理的块是正确的
+    last_correct = 'O'        # previous chunk tag in corpus  语料库中的上一个块标签
+    last_correct_type = ''    # type of previously identified chunk tag  先前标识的块标签的类型
+    last_guessed = 'O'        # previously identified chunk tag  先前识别的块标签
+    last_guessed_type = ''    # type of previous chunk tag in corpus 语料库中先前块标签的类型
 
     for line in iterable:
         line = line.rstrip('\r\n')
@@ -230,6 +239,16 @@ def report_notprint(counts, out=None):
 def end_of_chunk(prev_tag, tag, prev_type, type_):
     # check if a chunk ended between the previous and current word
     # arguments: previous and current chunk tags, previous and current types
+
+    """
+    检查代码块是否在上一个单词和当前单词之间结束
+    -参数：先前和当前块标记，先前和当前类型
+    :param prev_tag:
+    :param tag:
+    :param prev_type:
+    :param type_:
+    :return:
+    """
     chunk_end = False
 
     if prev_tag == 'E': chunk_end = True
@@ -245,7 +264,7 @@ def end_of_chunk(prev_tag, tag, prev_type, type_):
     if prev_tag != 'O' and prev_tag != '.' and prev_type != type_:
         chunk_end = True
 
-    # these chunks are assumed to have length 1
+    # these chunks are assumed to have length 1  假定这些块的长度为1
     if prev_tag == ']': chunk_end = True
     if prev_tag == '[': chunk_end = True
 
@@ -255,6 +274,9 @@ def end_of_chunk(prev_tag, tag, prev_type, type_):
 def start_of_chunk(prev_tag, tag, prev_type, type_):
     # check if a chunk started between the previous and current word
     # arguments: previous and current chunk tags, previous and current types
+
+    # 检查是否在上一个单词和当前单词之间开始了一个块
+    # 参数：先前和当前块标记，先前和当前类型
     chunk_start = False
 
     if tag == 'B': chunk_start = True
@@ -270,7 +292,7 @@ def start_of_chunk(prev_tag, tag, prev_type, type_):
     if tag != 'O' and tag != '.' and prev_type != type_:
         chunk_start = True
 
-    # these chunks are assumed to have length 1
+    # these chunks are assumed to have length 1　假定这些块的长度为1
     if tag == '[': chunk_start = True
     if tag == ']': chunk_start = True
 

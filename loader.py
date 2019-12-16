@@ -10,6 +10,9 @@ def load_sentences(path, lower, zeros):
     """
     Load sentences. A line must contain at least a word and its tag.
     Sentences are separated by empty lines.
+
+    加载句子。 一行必须至少包含一个单词及其标签。
+     句子之间用空行分隔。
     """
     sentences = []
     sentence = []
@@ -43,16 +46,20 @@ def update_tag_scheme(sentences, tag_scheme):
     """
     Check and update sentences tagging scheme to IOB2.
     Only IOB1 and IOB2 schemes are accepted.
+    检查并将句子标记方案更新为IOB2。
+     仅接受IOB1和IOB2方案。
     """
     for i, s in enumerate(sentences):
         tags = [w[-1] for w in s]
         # Check that tags are given in the IOB format
+        # 检查标签是否以IOB格式给出
         if not iob2(tags):
             s_str = '\n'.join(' '.join(w) for w in s)
             raise Exception('Sentences should be given in IOB format! ' +
                             'Please check sentence %i:\n%s' % (i, s_str))
         if tag_scheme == 'iob':
             # If format was IOB1, we convert to IOB2
+            # 如果格式为IOB1，我们将转换为IOB2
             for word, new_tag in zip(s, tags):
                 word[-1] = new_tag
         elif tag_scheme == 'iobes':
@@ -66,6 +73,7 @@ def update_tag_scheme(sentences, tag_scheme):
 def char_mapping(sentences, lower):
     """
     Create a dictionary and a mapping of words, sorted by frequency.
+    创建字典和单词映射，按频率排序。
     """
     chars = [[x[0].lower() if lower else x[0] for x in s] for s in sentences]
     dico = create_dico(chars)
@@ -81,6 +89,7 @@ def char_mapping(sentences, lower):
 def tag_mapping(sentences):
     """
     Create a dictionary and a mapping of tags, sorted by frequency.
+    创建字典和标签映射，按频率排序。
     """
     tags = [[char[-1] for char in s] for s in sentences]
     dico = create_dico(tags)
@@ -95,6 +104,10 @@ def prepare_dataset(sentences, char_to_id, tag_to_id, lower=False, train=True):
         - word indexes
         - word char indexes
         - tag indexes
+    准备数据集。 返回包含以下内容的词典列表列表：
+         -单词索引
+         -单词字符索引
+         -标签索引
     """
 
     none_index = tag_to_id["O"]
@@ -122,20 +135,32 @@ def augment_with_pretrained(dictionary, ext_emb_path, chars):
     If `words` is None, we add every word that has a pretrained embedding
     to the dictionary, otherwise, we only add the words that are given by
     `words` (typically the words in the development and test sets.)
+
+    用预先训练好的嵌入词增强词典的功能。
+     如果`words'为None，我们添加每个具有预训练嵌入的单词
+     到字典中，否则，我们只添加由
+     单词（通常是开发和测试集中的单词）。
     """
     print('Loading pretrained embeddings from %s...' % ext_emb_path)
     assert os.path.isfile(ext_emb_path)
 
     # Load pretrained embeddings from file
+    # 从文件加载预训练的嵌入
     pretrained = set([
         line.rstrip().split()[0].strip()
         for line in codecs.open(ext_emb_path, 'r', 'utf-8')
         if len(ext_emb_path) > 0
     ])
+    """
+        We either add every word in the pretrained file,
+        or only words given in the `words` list to which
+        we can assign a pretrained embedding
+        
+        我们要么在预训练的文件中添加每个单词，
+        或仅在“单词”列表中给出的单词
+        我们可以分配预训练的嵌入
+    """
 
-    # We either add every word in the pretrained file,
-    # or only words given in the `words` list to which
-    # we can assign a pretrained embedding
     if chars is None:
         for char in pretrained:
             if char not in dictionary:
@@ -155,7 +180,7 @@ def augment_with_pretrained(dictionary, ext_emb_path, chars):
 
 def save_maps(save_path, *params):
     """
-    Save mappings and invert mappings
+    保存映射并反转映射
     """
     pass
     # with codecs.open(save_path, "w", encoding="utf8") as f:
@@ -165,6 +190,7 @@ def save_maps(save_path, *params):
 def load_maps(save_path):
     """
     Load mappings from the file
+    从文件加载映射
     """
     pass
     # with codecs.open(save_path, "r", encoding="utf8") as f:

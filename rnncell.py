@@ -24,7 +24,10 @@ from tensorflow.python.util import nest
 
 
 def _get_concat_variable(name, shape, dtype, num_shards):
-  """Get a sharded variable concatenated into one tensor."""
+  """
+    Get a sharded variable concatenated into one tensor.
+    获取连接到一个张量的分片变量
+  """
   sharded_variable = _get_sharded_variable(name, shape, dtype, num_shards)
   if len(sharded_variable) == 1:
     return sharded_variable[0]
@@ -42,7 +45,10 @@ def _get_concat_variable(name, shape, dtype, num_shards):
 
 
 def _get_sharded_variable(name, shape, dtype, num_shards):
-  """Get a list of sharded variables with the given dtype."""
+  """
+    Get a list of sharded variables with the given dtype.
+    获取具有给定dtype的分片变量的列表。
+  """
   if num_shards > shape[0]:
     raise ValueError("Too many shards: shape=%s, num_shards=%d" %
                      (shape, num_shards))
@@ -60,7 +66,9 @@ def _get_sharded_variable(name, shape, dtype, num_shards):
 
 
 class CoupledInputForgetGateLSTMCell(rnn_cell_impl.RNNCell):
-  """Long short-term memory unit (LSTM) recurrent network cell.
+  """
+    Long short-term memory unit (LSTM) recurrent network cell.
+    长短期记忆单元（LSTM）循环网络单元
 
   The default non-peephole implementation is based on:
 
@@ -154,7 +162,7 @@ class CoupledInputForgetGateLSTMCell(rnn_cell_impl.RNNCell):
     return self._output_size
 
   def call(self, inputs, state):
-    """Run one step of LSTM.
+    """Run one step of LSTM.　运行LSTM的一步
 
     Args:
       inputs: input Tensor, 2D, batch x num_units.
@@ -194,7 +202,7 @@ class CoupledInputForgetGateLSTMCell(rnn_cell_impl.RNNCell):
     if input_size.value is None:
       raise ValueError("Could not infer input size from inputs.get_shape()[-1]")
 
-    # Input gate weights
+    # Input gate weights　　输入门重量
     self.w_xi = tf.get_variable("_w_xi", [input_size.value, self._num_units])
     self.w_hi = tf.get_variable("_w_hi", [self._num_units, self._num_units])
     self.w_ci = tf.get_variable("_w_ci", [self._num_units, self._num_units])
@@ -207,7 +215,7 @@ class CoupledInputForgetGateLSTMCell(rnn_cell_impl.RNNCell):
     self.w_xc = tf.get_variable("_w_xc", [input_size.value, self._num_units])
     self.w_hc = tf.get_variable("_w_hc", [self._num_units, self._num_units])
 
-    # Initialize the bias vectors
+    # Initialize the bias vectors　　初始化偏差向量
     self.b_i = tf.get_variable("_b_i", [self._num_units], initializer=init_ops.zeros_initializer())
     self.b_c = tf.get_variable("_b_c", [self._num_units], initializer=init_ops.zeros_initializer())
     self.b_o = tf.get_variable("_b_o", [self._num_units], initializer=init_ops.zeros_initializer())

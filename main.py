@@ -151,7 +151,7 @@ def train():
     train_manager = BatchManager(train_data, FLAGS.batch_size)
     dev_manager = BatchManager(dev_data, 100)
     test_manager = BatchManager(test_data, 100)
-    # make path for store log and model if not exist
+    # make path for store log and model if not exist　　为存储日志和模型创建路径（如果不存在）
     make_path(FLAGS)
     if os.path.isfile(FLAGS.config_file):
         config = load_config(FLAGS.config_file)

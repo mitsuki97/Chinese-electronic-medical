@@ -12,6 +12,7 @@ jieba.initialize()
 def create_dico(item_list):
     """
     Create a dictionary of items from a list of list of items.
+    从项目列表创建项目字典。
     """
     assert type(item_list) is list
     dico = {}
@@ -49,6 +50,9 @@ def iob2(tags):
     """
     Check that tags have a valid IOB format.
     Tags in IOB1 format are converted to IOB2.
+
+    检查标签是否具有有效的IOB格式。
+     IOB1格式的标签将转换为IOB2。
     """
     for i, tag in enumerate(tags):
         if tag == 'O':
@@ -116,6 +120,7 @@ def iobes_iob(tags):
 def insert_singletons(words, singletons, p=0.5):
     """
     Replace singletons by the unknown word with a probability p.
+    用概率p将单个单词替换为未知单词。
     """
     new_words = []
     for word in words:
@@ -131,6 +136,9 @@ def get_seg_features(string):
     Segment text with jieba
     features are represented in bies format
     s donates single word
+    使用jieba分割文字
+     特征以bies格式表示
+     s捐一个字
     """
     seg_feature = []
 
@@ -149,6 +157,8 @@ def create_input(data):
     """
     Take sentence data and return an input for
     the training or the evaluation function.
+    获取句子数据并返回输入
+     培训或评估功能。
     """
     inputs = list()
     inputs.append(data['chars'])
@@ -161,6 +171,8 @@ def load_word2vec(emb_path, id_to_word, word_dim, old_weights):
     """
     Load word embedding from pre-trained file
     embedding size must match
+    从预训练的文件中加载单词嵌入
+     嵌入尺寸必须匹配
     """
     new_weights = old_weights
     print('Loading pretrained embeddings from {}...'.format(emb_path))
@@ -181,6 +193,7 @@ def load_word2vec(emb_path, id_to_word, word_dim, old_weights):
     c_zeros = 0
     n_words = len(id_to_word)
     # Lookup table initialization
+    # 查询表初始化
     for i in range(n_words):
         word = id_to_word[i]
         if word in pre_trained:
@@ -209,7 +222,8 @@ def load_word2vec(emb_path, id_to_word, word_dim, old_weights):
 
 def full_to_half(s):
     """
-    Convert full-width character to half-width one 
+    Convert full-width character to half-width one
+    将全角字符转换为半角字符
     """
     n = []
     for char in s:
@@ -225,7 +239,8 @@ def full_to_half(s):
 
 def cut_to_sentence(text):
     """
-    Cut text to sentences 
+    Cut text to sentences
+    将文字切成句子
     """
     sentence = []
     sentences = []
@@ -269,6 +284,8 @@ def input_from_line(line, char_to_id):
     """
     Take sentence data and return an input for
     the training or the evaluation function.
+    获取句子数据并返回输入
+     培训或评估功能。
     """
     line = full_to_half(line)
     line = replace_html(line)
