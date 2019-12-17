@@ -25,10 +25,17 @@ flags.DEFINE_integer("char_dim",    100,        "Embedding size for characters")
 flags.DEFINE_integer("lstm_dim",    100,        "Num of hidden units in LSTM")
 flags.DEFINE_string("tag_schema",   "iobes",    "tagging schema iobes or iob")
 
+
+"""
+    https://blog.csdn.net/imsuhxz/article/details/99441234
+    参数修改网站
+"""
 # configurations for training
 flags.DEFINE_float("clip",          5,          "Gradient clip")
-flags.DEFINE_float("dropout",       0.5,        "Dropout rate")
-flags.DEFINE_float("batch_size",    20,         "batch size")
+# flags.DEFINE_float("dropout",       0.5,        "Dropout rate")
+flags.DEFINE_float("dropout",       0.3,        "Dropout rate")
+# flags.DEFINE_float("batch_size",    20,         "batch size")
+flags.DEFINE_float("batch_size",    8,         "batch size")
 flags.DEFINE_float("lr",            0.001,      "Initial learning rate")
 flags.DEFINE_string("optimizer",    "adam",     "Optimizer for training")
 flags.DEFINE_boolean("pre_emb",     True,       "Wither use pre-trained embedding")
@@ -36,7 +43,8 @@ flags.DEFINE_boolean("zeros",       False,      "Wither replace digits with zero
 flags.DEFINE_boolean("lower",       True,       "Wither lower case")
 
 flags.DEFINE_integer("max_epoch",   100,        "maximum training epochs")
-flags.DEFINE_integer("steps_check", 100,        "steps per checkpoint")
+# flags.DEFINE_integer("steps_check", 100,        "steps per checkpoint")
+flags.DEFINE_integer("steps_check", 50,        "steps per checkpoint")
 flags.DEFINE_string("ckpt_path",    "ckpt",      "Path to save model")
 flags.DEFINE_string("summary_path", "summary",      "Path to store summaries")
 flags.DEFINE_string("log_file",     "train.log",    "File for log")
