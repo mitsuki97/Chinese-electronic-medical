@@ -6,7 +6,7 @@
     "lstm_dim": 100,
     "batch_size": 20.0,
     "emb_file": "wiki_100.utf8",
-    "clip": 5.0,
+    "clip": 2.5,
     "dropout_keep": 0.5,
     "optimizer": "adam",
     "lr": 0.001,

@@ -1,0 +1,3148 @@
+2019-06-26 00:17:53,096 - log\train.log - INFO - num_chars      :	1641
+2019-06-26 00:17:53,096 - log\train.log - INFO - char_dim       :	100
+2019-06-26 00:17:53,096 - log\train.log - INFO - num_tags       :	19
+2019-06-26 00:17:53,096 - log\train.log - INFO - seg_dim        :	20
+2019-06-26 00:17:53,097 - log\train.log - INFO - lstm_dim       :	100
+2019-06-26 00:17:53,097 - log\train.log - INFO - batch_size     :	20.0
+2019-06-26 00:17:53,097 - log\train.log - INFO - emb_file       :	wiki_100.utf8
+2019-06-26 00:17:53,097 - log\train.log - INFO - clip           :	5.0
+2019-06-26 00:17:53,097 - log\train.log - INFO - dropout_keep   :	0.5
+2019-06-26 00:17:53,097 - log\train.log - INFO - optimizer      :	adam
+2019-06-26 00:17:53,097 - log\train.log - INFO - lr             :	0.001
+2019-06-26 00:17:53,098 - log\train.log - INFO - tag_schema     :	iobes
+2019-06-26 00:17:53,098 - log\train.log - INFO - pre_emb        :	True
+2019-06-26 00:17:53,098 - log\train.log - INFO - zeros          :	False
+2019-06-26 00:17:53,098 - log\train.log - INFO - lower          :	True
+2019-06-26 00:17:56,606 - log\train.log - INFO - Created model with fresh parameters.
+2019-06-26 00:17:58,575 - log\train.log - INFO - Load pre-trained embedding.
+2019-06-26 00:17:58,575 - log\train.log - INFO - start training
+2019-06-26 00:20:34,985 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:20:39,451 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 25162 phrases; correct: 48.
+
+2019-06-26 00:20:39,451 - log\train.log - INFO - accuracy:  10.35%; precision:   0.19%; recall:   1.62%; FB1:   0.34
+
+2019-06-26 00:20:39,452 - log\train.log - INFO -              BODY: precision:   0.17%; recall:   0.58%; FB1:   0.26  3492
+
+2019-06-26 00:20:39,452 - log\train.log - INFO -             CHECK: precision:   0.97%; recall:   5.02%; FB1:   1.63  4022
+
+2019-06-26 00:20:39,452 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  1033
+
+2019-06-26 00:20:39,452 - log\train.log - INFO -             SIGNS: precision:   0.03%; recall:   0.28%; FB1:   0.05  11678
+
+2019-06-26 00:20:39,452 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  4937
+
+2019-06-26 00:20:39,606 - log\train.log - INFO - new best dev f1 score:0.340
+2019-06-26 00:20:42,459 - log\train.log - INFO - model saved
+2019-06-26 00:20:42,460 - log\train.log - INFO - evaluate:test
+2019-06-26 00:20:50,643 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 51937 phrases; correct: 206.
+
+2019-06-26 00:20:50,643 - log\train.log - INFO - accuracy:   7.98%; precision:   0.40%; recall:   2.30%; FB1:   0.68
+
+2019-06-26 00:20:50,644 - log\train.log - INFO -              BODY: precision:   1.71%; recall:   3.11%; FB1:   2.21  6427
+
+2019-06-26 00:20:50,644 - log\train.log - INFO -             CHECK: precision:   1.31%; recall:   3.20%; FB1:   1.86  7187
+
+2019-06-26 00:20:50,644 - log\train.log - INFO -           DISEASE: precision:   0.05%; recall:   1.72%; FB1:   0.10  1978
+
+2019-06-26 00:20:50,644 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.04%; FB1:   0.01  28319
+
+2019-06-26 00:20:50,644 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  8026
+
+2019-06-26 00:20:50,795 - log\train.log - INFO - new best test f1 score:0.680
+2019-06-26 00:23:30,023 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:23:34,346 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 19170 phrases; correct: 41.
+
+2019-06-26 00:23:34,346 - log\train.log - INFO - accuracy:  27.09%; precision:   0.21%; recall:   1.39%; FB1:   0.37
+
+2019-06-26 00:23:34,346 - log\train.log - INFO -              BODY: precision:   0.23%; recall:   0.39%; FB1:   0.29  1742
+
+2019-06-26 00:23:34,346 - log\train.log - INFO -             CHECK: precision:   0.44%; recall:   4.76%; FB1:   0.81  8401
+
+2019-06-26 00:23:34,346 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  674
+
+2019-06-26 00:23:34,346 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  4835
+
+2019-06-26 00:23:34,347 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  3518
+
+2019-06-26 00:23:34,483 - log\train.log - INFO - new best dev f1 score:0.370
+2019-06-26 00:23:37,193 - log\train.log - INFO - model saved
+2019-06-26 00:23:37,194 - log\train.log - INFO - evaluate:test
+2019-06-26 00:23:45,443 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 38077 phrases; correct: 152.
+
+2019-06-26 00:23:45,443 - log\train.log - INFO - accuracy:  24.06%; precision:   0.40%; recall:   1.69%; FB1:   0.65
+
+2019-06-26 00:23:45,443 - log\train.log - INFO -              BODY: precision:   1.61%; recall:   1.47%; FB1:   1.54  3230
+
+2019-06-26 00:23:45,443 - log\train.log - INFO -             CHECK: precision:   0.58%; recall:   3.40%; FB1:   0.99  17296
+
+2019-06-26 00:23:45,443 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  1457
+
+2019-06-26 00:23:45,443 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  10338
+
+2019-06-26 00:23:45,443 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  5756
+
+2019-06-26 00:26:29,695 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:26:33,886 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 11475 phrases; correct: 40.
+
+2019-06-26 00:26:33,886 - log\train.log - INFO - accuracy:  48.32%; precision:   0.35%; recall:   1.35%; FB1:   0.55
+
+2019-06-26 00:26:33,886 - log\train.log - INFO -              BODY: precision:   0.50%; recall:   0.19%; FB1:   0.28  403
+
+2019-06-26 00:26:33,887 - log\train.log - INFO -             CHECK: precision:   0.39%; recall:   4.89%; FB1:   0.72  9754
+
+2019-06-26 00:26:33,887 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  70
+
+2019-06-26 00:26:33,887 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  445
+
+2019-06-26 00:26:33,887 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  803
+
+2019-06-26 00:26:34,002 - log\train.log - INFO - new best dev f1 score:0.550
+2019-06-26 00:26:36,617 - log\train.log - INFO - model saved
+2019-06-26 00:26:36,617 - log\train.log - INFO - evaluate:test
+2019-06-26 00:26:44,920 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 25099 phrases; correct: 121.
+
+2019-06-26 00:26:44,920 - log\train.log - INFO - accuracy:  38.37%; precision:   0.48%; recall:   1.35%; FB1:   0.71
+
+2019-06-26 00:26:44,920 - log\train.log - INFO -              BODY: precision:   3.44%; recall:   0.79%; FB1:   1.29  815
+
+2019-06-26 00:26:44,920 - log\train.log - INFO -             CHECK: precision:   0.42%; recall:   3.16%; FB1:   0.74  22098
+
+2019-06-26 00:26:44,920 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  220
+
+2019-06-26 00:26:44,920 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  707
+
+2019-06-26 00:26:44,921 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1259
+
+2019-06-26 00:26:45,027 - log\train.log - INFO - new best test f1 score:0.710
+2019-06-26 00:29:31,379 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:29:35,627 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 4719 phrases; correct: 1.
+
+2019-06-26 00:29:35,628 - log\train.log - INFO - accuracy:  63.75%; precision:   0.02%; recall:   0.03%; FB1:   0.03
+
+2019-06-26 00:29:35,628 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  151
+
+2019-06-26 00:29:35,628 - log\train.log - INFO -             CHECK: precision:   0.02%; recall:   0.13%; FB1:   0.04  4504
+
+2019-06-26 00:29:35,628 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:29:35,628 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  8
+
+2019-06-26 00:29:35,628 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  56
+
+2019-06-26 00:29:35,629 - log\train.log - INFO - evaluate:test
+2019-06-26 00:29:44,030 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9379 phrases; correct: 2.
+
+2019-06-26 00:29:44,030 - log\train.log - INFO - accuracy:  53.99%; precision:   0.02%; recall:   0.02%; FB1:   0.02
+
+2019-06-26 00:29:44,030 - log\train.log - INFO -              BODY: precision:   1.25%; recall:   0.03%; FB1:   0.06  80
+
+2019-06-26 00:29:44,030 - log\train.log - INFO -             CHECK: precision:   0.01%; recall:   0.03%; FB1:   0.02  9259
+
+2019-06-26 00:29:44,030 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  2
+
+2019-06-26 00:29:44,030 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:29:44,030 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  38
+
+2019-06-26 00:32:31,251 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:32:35,394 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 859 phrases; correct: 0.
+
+2019-06-26 00:32:35,394 - log\train.log - INFO - accuracy:  72.49%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:32:35,394 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  96
+
+2019-06-26 00:32:35,394 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  762
+
+2019-06-26 00:32:35,394 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:32:35,394 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:32:35,394 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 00:32:35,396 - log\train.log - INFO - evaluate:test
+2019-06-26 00:32:43,687 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 702 phrases; correct: 0.
+
+2019-06-26 00:32:43,688 - log\train.log - INFO - accuracy:  61.21%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:32:43,688 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  2
+
+2019-06-26 00:32:43,688 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  699
+
+2019-06-26 00:32:43,688 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:32:43,688 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:32:43,688 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 00:35:39,071 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:35:43,355 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 225 phrases; correct: 0.
+
+2019-06-26 00:35:43,355 - log\train.log - INFO - accuracy:  73.84%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:35:43,355 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  54
+
+2019-06-26 00:35:43,355 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  171
+
+2019-06-26 00:35:43,355 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:35:43,356 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:35:43,357 - log\train.log - INFO - evaluate:test
+2019-06-26 00:35:51,713 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 44 phrases; correct: 0.
+
+2019-06-26 00:35:51,713 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:35:51,713 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 00:35:51,713 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  43
+
+2019-06-26 00:35:51,714 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:35:51,714 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:35:51,714 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:38:45,898 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:38:50,232 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 14 phrases; correct: 0.
+
+2019-06-26 00:38:50,232 - log\train.log - INFO - accuracy:  74.50%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:38:50,232 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:38:50,232 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  14
+
+2019-06-26 00:38:50,232 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:38:50,233 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:38:50,234 - log\train.log - INFO - evaluate:test
+2019-06-26 00:38:58,506 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:38:58,506 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:38:58,506 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:38:58,506 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:38:58,507 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:38:58,507 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:38:58,507 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:41:57,091 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:42:01,270 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:42:01,270 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:42:01,270 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:42:01,270 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:42:01,270 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:42:01,270 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:42:01,272 - log\train.log - INFO - evaluate:test
+2019-06-26 00:42:09,769 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:42:09,769 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:42:09,769 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:42:09,769 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:42:09,770 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:42:09,770 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:42:09,770 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:45:07,906 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:45:12,100 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:45:12,100 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:45:12,100 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:45:12,100 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:45:12,100 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:45:12,100 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:45:12,102 - log\train.log - INFO - evaluate:test
+2019-06-26 00:45:20,601 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:45:20,601 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:45:20,601 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:45:20,601 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:45:20,601 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:45:20,601 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:45:20,602 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:48:19,697 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:48:23,818 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:48:23,818 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:48:23,819 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:48:23,819 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:48:23,819 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:48:23,819 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:48:23,819 - log\train.log - INFO - evaluate:test
+2019-06-26 00:48:32,171 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:48:32,171 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:48:32,171 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:48:32,171 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:48:32,171 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:48:32,172 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:48:32,172 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:51:34,334 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:51:38,484 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:51:38,484 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:51:38,485 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:51:38,485 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:51:38,485 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:51:38,485 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:51:38,486 - log\train.log - INFO - evaluate:test
+2019-06-26 00:51:46,874 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:51:46,874 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:51:46,874 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:51:46,874 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:51:46,874 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:51:46,874 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:51:46,874 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:54:46,836 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:54:50,970 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:54:50,970 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:54:50,970 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:54:50,970 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:54:50,970 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:54:50,970 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:54:50,971 - log\train.log - INFO - evaluate:test
+2019-06-26 00:54:59,343 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:54:59,343 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:54:59,343 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:54:59,343 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:54:59,343 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:54:59,343 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:54:59,343 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:58:00,389 - log\train.log - INFO - evaluate:dev
+2019-06-26 00:58:04,625 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:58:04,626 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:58:04,626 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:58:04,626 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:58:04,626 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:58:04,626 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:58:04,628 - log\train.log - INFO - evaluate:test
+2019-06-26 00:58:13,021 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 00:58:13,021 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 00:58:13,021 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:58:13,021 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:58:13,021 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:58:13,021 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 00:58:13,021 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:01:16,204 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:01:20,441 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:01:20,442 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:01:20,442 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:01:20,442 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:01:20,442 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:01:20,442 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:01:20,443 - log\train.log - INFO - evaluate:test
+2019-06-26 01:01:28,963 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:01:28,963 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:01:28,963 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:01:28,963 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:01:28,963 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:01:28,964 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:01:28,964 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:04:32,356 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:04:36,498 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:04:36,498 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:04:36,498 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:04:36,498 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:04:36,498 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:04:36,498 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:04:36,500 - log\train.log - INFO - evaluate:test
+2019-06-26 01:04:44,997 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:04:44,997 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:04:44,997 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:04:44,997 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:04:44,998 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:04:44,998 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:04:44,998 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:07:51,037 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:07:55,466 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:07:55,467 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:07:55,467 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:07:55,467 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:07:55,467 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:07:55,467 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:07:55,468 - log\train.log - INFO - evaluate:test
+2019-06-26 01:08:04,118 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:08:04,118 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:08:04,118 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:08:04,118 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:08:04,118 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:08:04,119 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:08:04,119 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:11:09,685 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:11:13,970 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:11:13,970 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:11:13,971 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:11:13,971 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:11:13,971 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:11:13,971 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:11:13,972 - log\train.log - INFO - evaluate:test
+2019-06-26 01:11:22,472 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:11:22,472 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:11:22,473 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:11:22,473 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:11:22,473 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:11:22,473 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:11:22,473 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:14:28,431 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:14:32,701 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:14:32,701 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:14:32,701 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:14:32,701 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:14:32,701 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:14:32,701 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:14:32,703 - log\train.log - INFO - evaluate:test
+2019-06-26 01:14:41,126 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:14:41,126 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:14:41,127 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:14:41,127 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:14:41,127 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:14:41,127 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:14:41,127 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:17:47,138 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:17:51,317 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:17:51,317 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:17:51,317 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:17:51,317 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:17:51,317 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:17:51,317 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:17:51,319 - log\train.log - INFO - evaluate:test
+2019-06-26 01:17:59,852 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:17:59,852 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:17:59,852 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:17:59,852 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:17:59,852 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:17:59,852 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:17:59,852 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:21:08,452 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:21:12,849 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:21:12,849 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:21:12,849 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:21:12,849 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:21:12,849 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:21:12,849 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:21:12,851 - log\train.log - INFO - evaluate:test
+2019-06-26 01:21:21,539 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:21:21,540 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:21:21,540 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:21:21,540 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:21:21,540 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:21:21,540 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:21:21,540 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:24:29,039 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:24:33,844 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:24:33,844 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:24:33,844 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:24:33,844 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:24:33,844 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:24:33,844 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:24:33,845 - log\train.log - INFO - evaluate:test
+2019-06-26 01:24:42,629 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:24:42,629 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:24:42,629 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:24:42,629 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:24:42,629 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:24:42,630 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:24:42,630 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:27:51,925 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:27:56,175 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 0 phrases; correct: 0.
+
+2019-06-26 01:27:56,175 - log\train.log - INFO - accuracy:  74.54%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:27:56,175 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:27:56,176 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:27:56,176 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:27:56,176 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:27:56,177 - log\train.log - INFO - evaluate:test
+2019-06-26 01:28:04,822 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 1 phrases; correct: 0.
+
+2019-06-26 01:28:04,822 - log\train.log - INFO - accuracy:  61.40%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:28:04,822 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 01:28:04,822 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:28:04,822 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:28:04,822 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:28:04,822 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:31:16,512 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:31:20,795 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 6 phrases; correct: 0.
+
+2019-06-26 01:31:20,795 - log\train.log - INFO - accuracy:  74.56%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:31:20,795 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  6
+
+2019-06-26 01:31:20,795 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:31:20,796 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:31:20,796 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:31:20,797 - log\train.log - INFO - evaluate:test
+2019-06-26 01:31:29,300 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 13 phrases; correct: 0.
+
+2019-06-26 01:31:29,301 - log\train.log - INFO - accuracy:  61.41%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:31:29,301 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  13
+
+2019-06-26 01:31:29,301 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:31:29,301 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:31:29,301 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:31:29,301 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:34:41,388 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:34:45,643 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 33 phrases; correct: 0.
+
+2019-06-26 01:34:45,643 - log\train.log - INFO - accuracy:  74.63%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:34:45,643 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  33
+
+2019-06-26 01:34:45,644 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:34:45,644 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:34:45,644 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:34:45,645 - log\train.log - INFO - evaluate:test
+2019-06-26 01:34:54,079 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 63 phrases; correct: 0.
+
+2019-06-26 01:34:54,079 - log\train.log - INFO - accuracy:  61.46%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:34:54,079 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  63
+
+2019-06-26 01:34:54,079 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:34:54,079 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:34:54,080 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:34:54,080 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:38:06,826 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:38:11,142 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 41 phrases; correct: 0.
+
+2019-06-26 01:38:11,143 - log\train.log - INFO - accuracy:  74.63%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:38:11,143 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  41
+
+2019-06-26 01:38:11,143 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:38:11,143 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:38:11,143 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:38:11,144 - log\train.log - INFO - evaluate:test
+2019-06-26 01:38:19,933 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 116 phrases; correct: 2.
+
+2019-06-26 01:38:19,934 - log\train.log - INFO - accuracy:  61.51%; precision:   1.72%; recall:   0.02%; FB1:   0.04
+
+2019-06-26 01:38:19,934 - log\train.log - INFO -              BODY: precision:   1.72%; recall:   0.06%; FB1:   0.11  116
+
+2019-06-26 01:38:19,934 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:38:19,934 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:38:19,934 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:38:19,934 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:41:31,863 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:41:36,111 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 71 phrases; correct: 0.
+
+2019-06-26 01:41:36,111 - log\train.log - INFO - accuracy:  74.73%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:41:36,111 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  42
+
+2019-06-26 01:41:36,111 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:41:36,111 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:41:36,111 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  29
+
+2019-06-26 01:41:36,112 - log\train.log - INFO - evaluate:test
+2019-06-26 01:41:44,567 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 163 phrases; correct: 2.
+
+2019-06-26 01:41:44,568 - log\train.log - INFO - accuracy:  61.58%; precision:   1.23%; recall:   0.02%; FB1:   0.04
+
+2019-06-26 01:41:44,568 - log\train.log - INFO -              BODY: precision:   1.63%; recall:   0.06%; FB1:   0.11  123
+
+2019-06-26 01:41:44,568 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:41:44,568 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:41:44,568 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  40
+
+2019-06-26 01:41:44,568 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:44:58,111 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:45:02,360 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 64 phrases; correct: 0.
+
+2019-06-26 01:45:02,360 - log\train.log - INFO - accuracy:  74.72%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:45:02,361 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  35
+
+2019-06-26 01:45:02,361 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:45:02,361 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:45:02,361 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  29
+
+2019-06-26 01:45:02,362 - log\train.log - INFO - evaluate:test
+2019-06-26 01:45:10,970 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 153 phrases; correct: 2.
+
+2019-06-26 01:45:10,971 - log\train.log - INFO - accuracy:  61.58%; precision:   1.31%; recall:   0.02%; FB1:   0.04
+
+2019-06-26 01:45:10,971 - log\train.log - INFO -              BODY: precision:   1.77%; recall:   0.06%; FB1:   0.11  113
+
+2019-06-26 01:45:10,971 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:45:10,971 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:45:10,971 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  40
+
+2019-06-26 01:45:10,971 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:48:24,098 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:48:28,368 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 39 phrases; correct: 0.
+
+2019-06-26 01:48:28,368 - log\train.log - INFO - accuracy:  74.64%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:48:28,368 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  34
+
+2019-06-26 01:48:28,369 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:48:28,369 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:48:28,369 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  5
+
+2019-06-26 01:48:28,370 - log\train.log - INFO - evaluate:test
+2019-06-26 01:48:36,784 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 93 phrases; correct: 0.
+
+2019-06-26 01:48:36,784 - log\train.log - INFO - accuracy:  61.49%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:48:36,784 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  83
+
+2019-06-26 01:48:36,784 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:48:36,785 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:48:36,785 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  10
+
+2019-06-26 01:48:36,785 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:51:50,293 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:51:54,427 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 30 phrases; correct: 0.
+
+2019-06-26 01:51:54,427 - log\train.log - INFO - accuracy:  74.62%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:51:54,427 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  30
+
+2019-06-26 01:51:54,427 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:51:54,427 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:51:54,428 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:51:54,429 - log\train.log - INFO - evaluate:test
+2019-06-26 01:52:02,999 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 52 phrases; correct: 0.
+
+2019-06-26 01:52:02,999 - log\train.log - INFO - accuracy:  61.45%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:52:02,999 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  52
+
+2019-06-26 01:52:02,999 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:52:02,999 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:52:02,999 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:52:02,999 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:55:19,072 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:55:23,430 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 24 phrases; correct: 0.
+
+2019-06-26 01:55:23,431 - log\train.log - INFO - accuracy:  74.60%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:55:23,431 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  24
+
+2019-06-26 01:55:23,431 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:55:23,431 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:55:23,431 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:55:23,436 - log\train.log - INFO - evaluate:test
+2019-06-26 01:55:32,133 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 49 phrases; correct: 0.
+
+2019-06-26 01:55:32,133 - log\train.log - INFO - accuracy:  61.45%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:55:32,133 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  49
+
+2019-06-26 01:55:32,133 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:55:32,133 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:55:32,134 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:55:32,134 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:58:46,170 - log\train.log - INFO - evaluate:dev
+2019-06-26 01:58:50,465 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 30 phrases; correct: 0.
+
+2019-06-26 01:58:50,465 - log\train.log - INFO - accuracy:  74.62%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:58:50,465 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  30
+
+2019-06-26 01:58:50,465 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:58:50,466 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:58:50,466 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:58:50,467 - log\train.log - INFO - evaluate:test
+2019-06-26 01:58:58,820 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 52 phrases; correct: 0.
+
+2019-06-26 01:58:58,821 - log\train.log - INFO - accuracy:  61.46%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 01:58:58,821 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  52
+
+2019-06-26 01:58:58,821 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:58:58,821 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:58:58,821 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 01:58:58,821 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:02:13,130 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:02:17,311 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 65 phrases; correct: 0.
+
+2019-06-26 02:02:17,311 - log\train.log - INFO - accuracy:  74.73%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 02:02:17,311 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  35
+
+2019-06-26 02:02:17,311 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:02:17,311 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:02:17,311 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  30
+
+2019-06-26 02:02:17,312 - log\train.log - INFO - evaluate:test
+2019-06-26 02:02:25,674 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 136 phrases; correct: 0.
+
+2019-06-26 02:02:25,675 - log\train.log - INFO - accuracy:  61.58%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 02:02:25,675 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  96
+
+2019-06-26 02:02:25,675 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:02:25,675 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:02:25,675 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  40
+
+2019-06-26 02:02:25,675 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:05:38,031 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:05:42,151 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 75 phrases; correct: 0.
+
+2019-06-26 02:05:42,151 - log\train.log - INFO - accuracy:  74.75%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2019-06-26 02:05:42,151 - log\train.log - INFO -              BODY: precision:   0.00%; recall:   0.00%; FB1:   0.00  43
+
+2019-06-26 02:05:42,151 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:05:42,151 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:05:42,151 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  32
+
+2019-06-26 02:05:42,153 - log\train.log - INFO - evaluate:test
+2019-06-26 02:05:50,608 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 245 phrases; correct: 6.
+
+2019-06-26 02:05:50,609 - log\train.log - INFO - accuracy:  61.69%; precision:   2.45%; recall:   0.07%; FB1:   0.13
+
+2019-06-26 02:05:50,609 - log\train.log - INFO -              BODY: precision:   2.99%; recall:   0.17%; FB1:   0.32  201
+
+2019-06-26 02:05:50,609 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:05:50,609 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:05:50,609 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  44
+
+2019-06-26 02:05:50,609 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:09:03,504 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:09:07,718 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 237 phrases; correct: 2.
+
+2019-06-26 02:09:07,718 - log\train.log - INFO - accuracy:  75.11%; precision:   0.84%; recall:   0.07%; FB1:   0.13
+
+2019-06-26 02:09:07,718 - log\train.log - INFO -              BODY: precision:   1.01%; recall:   0.19%; FB1:   0.32  199
+
+2019-06-26 02:09:07,718 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  3
+
+2019-06-26 02:09:07,718 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:09:07,718 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  35
+
+2019-06-26 02:09:07,720 - log\train.log - INFO - evaluate:test
+2019-06-26 02:09:16,045 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 819 phrases; correct: 51.
+
+2019-06-26 02:09:16,045 - log\train.log - INFO - accuracy:  62.36%; precision:   6.23%; recall:   0.57%; FB1:   1.04
+
+2019-06-26 02:09:16,045 - log\train.log - INFO -              BODY: precision:   7.26%; recall:   1.44%; FB1:   2.41  702
+
+2019-06-26 02:09:16,045 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  26
+
+2019-06-26 02:09:16,046 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:09:16,046 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  91
+
+2019-06-26 02:09:16,046 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:09:16,259 - log\train.log - INFO - new best test f1 score:1.040
+2019-06-26 02:12:29,538 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:12:33,792 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 640 phrases; correct: 40.
+
+2019-06-26 02:12:33,792 - log\train.log - INFO - accuracy:  75.76%; precision:   6.25%; recall:   1.35%; FB1:   2.23
+
+2019-06-26 02:12:33,792 - log\train.log - INFO -              BODY: precision:   8.25%; recall:   3.85%; FB1:   5.25  485
+
+2019-06-26 02:12:33,792 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  58
+
+2019-06-26 02:12:33,792 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:12:33,793 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  97
+
+2019-06-26 02:12:33,937 - log\train.log - INFO - new best dev f1 score:2.230
+2019-06-26 02:12:37,028 - log\train.log - INFO - model saved
+2019-06-26 02:12:37,028 - log\train.log - INFO - evaluate:test
+2019-06-26 02:12:45,383 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 2008 phrases; correct: 153.
+
+2019-06-26 02:12:45,383 - log\train.log - INFO - accuracy:  63.33%; precision:   7.62%; recall:   1.71%; FB1:   2.79
+
+2019-06-26 02:12:45,383 - log\train.log - INFO -              BODY: precision:   9.73%; recall:   4.33%; FB1:   5.99  1573
+
+2019-06-26 02:12:45,383 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  174
+
+2019-06-26 02:12:45,383 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:12:45,383 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  260
+
+2019-06-26 02:12:45,384 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:12:45,518 - log\train.log - INFO - new best test f1 score:2.790
+2019-06-26 02:16:15,392 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:16:19,611 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 1215 phrases; correct: 46.
+
+2019-06-26 02:16:19,611 - log\train.log - INFO - accuracy:  77.33%; precision:   3.79%; recall:   1.56%; FB1:   2.21
+
+2019-06-26 02:16:19,611 - log\train.log - INFO -              BODY: precision:   6.13%; recall:   4.43%; FB1:   5.15  750
+
+2019-06-26 02:16:19,611 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  175
+
+2019-06-26 02:16:19,611 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:16:19,612 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  289
+
+2019-06-26 02:16:19,612 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:16:19,613 - log\train.log - INFO - evaluate:test
+2019-06-26 02:16:28,069 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 3639 phrases; correct: 247.
+
+2019-06-26 02:16:28,069 - log\train.log - INFO - accuracy:  65.11%; precision:   6.79%; recall:   2.75%; FB1:   3.92
+
+2019-06-26 02:16:28,069 - log\train.log - INFO -              BODY: precision:  10.21%; recall:   6.99%; FB1:   8.30  2419
+
+2019-06-26 02:16:28,070 - log\train.log - INFO -             CHECK: precision:   0.00%; recall:   0.00%; FB1:   0.00  470
+
+2019-06-26 02:16:28,070 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:16:28,070 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  749
+
+2019-06-26 02:16:28,070 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:16:28,181 - log\train.log - INFO - new best test f1 score:3.920
+2019-06-26 02:20:07,741 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:20:11,975 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 1666 phrases; correct: 56.
+
+2019-06-26 02:20:11,975 - log\train.log - INFO - accuracy:  78.29%; precision:   3.36%; recall:   1.90%; FB1:   2.42
+
+2019-06-26 02:20:11,975 - log\train.log - INFO -              BODY: precision:   5.37%; recall:   4.91%; FB1:   5.13  949
+
+2019-06-26 02:20:11,975 - log\train.log - INFO -             CHECK: precision:   1.77%; recall:   0.64%; FB1:   0.94  282
+
+2019-06-26 02:20:11,976 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:20:11,976 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  434
+
+2019-06-26 02:20:11,976 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:20:12,100 - log\train.log - INFO - new best dev f1 score:2.420
+2019-06-26 02:20:14,781 - log\train.log - INFO - model saved
+2019-06-26 02:20:14,781 - log\train.log - INFO - evaluate:test
+2019-06-26 02:20:23,356 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 4935 phrases; correct: 301.
+
+2019-06-26 02:20:23,356 - log\train.log - INFO - accuracy:  66.18%; precision:   6.10%; recall:   3.35%; FB1:   4.33
+
+2019-06-26 02:20:23,357 - log\train.log - INFO -              BODY: precision:   9.21%; recall:   8.35%; FB1:   8.76  3204
+
+2019-06-26 02:20:23,357 - log\train.log - INFO -             CHECK: precision:   0.95%; recall:   0.20%; FB1:   0.34  629
+
+2019-06-26 02:20:23,357 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:20:23,357 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  1101
+
+2019-06-26 02:20:23,357 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:20:23,480 - log\train.log - INFO - new best test f1 score:4.330
+2019-06-26 02:23:44,548 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:23:48,766 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 1796 phrases; correct: 66.
+
+2019-06-26 02:23:48,767 - log\train.log - INFO - accuracy:  78.59%; precision:   3.67%; recall:   2.23%; FB1:   2.78
+
+2019-06-26 02:23:48,767 - log\train.log - INFO -              BODY: precision:   5.73%; recall:   5.68%; FB1:   5.71  1030
+
+2019-06-26 02:23:48,767 - log\train.log - INFO -             CHECK: precision:   2.79%; recall:   0.90%; FB1:   1.36  251
+
+2019-06-26 02:23:48,767 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:23:48,767 - log\train.log - INFO -             SIGNS: precision:   0.00%; recall:   0.00%; FB1:   0.00  514
+
+2019-06-26 02:23:48,767 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:23:48,879 - log\train.log - INFO - new best dev f1 score:2.780
+2019-06-26 02:23:51,569 - log\train.log - INFO - model saved
+2019-06-26 02:23:51,569 - log\train.log - INFO - evaluate:test
+2019-06-26 02:23:59,824 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 5478 phrases; correct: 389.
+
+2019-06-26 02:23:59,824 - log\train.log - INFO - accuracy:  66.88%; precision:   7.10%; recall:   4.34%; FB1:   5.38
+
+2019-06-26 02:23:59,824 - log\train.log - INFO -              BODY: precision:  10.71%; recall:  10.67%; FB1:  10.69  3520
+
+2019-06-26 02:23:59,824 - log\train.log - INFO -             CHECK: precision:   1.77%; recall:   0.37%; FB1:   0.62  622
+
+2019-06-26 02:23:59,824 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:23:59,824 - log\train.log - INFO -             SIGNS: precision:   0.07%; recall:   0.04%; FB1:   0.05  1334
+
+2019-06-26 02:23:59,824 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  2
+
+2019-06-26 02:23:59,952 - log\train.log - INFO - new best test f1 score:5.380
+2019-06-26 02:27:21,113 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:27:25,418 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 1827 phrases; correct: 99.
+
+2019-06-26 02:27:25,418 - log\train.log - INFO - accuracy:  78.82%; precision:   5.42%; recall:   3.35%; FB1:   4.14
+
+2019-06-26 02:27:25,418 - log\train.log - INFO -              BODY: precision:   6.45%; recall:   6.45%; FB1:   6.45  1038
+
+2019-06-26 02:27:25,418 - log\train.log - INFO -             CHECK: precision:   3.80%; recall:   1.16%; FB1:   1.78  237
+
+2019-06-26 02:27:25,418 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:27:25,418 - log\train.log - INFO -             SIGNS: precision:   4.17%; recall:   2.16%; FB1:   2.85  551
+
+2019-06-26 02:27:25,418 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:27:25,539 - log\train.log - INFO - new best dev f1 score:4.140
+2019-06-26 02:27:28,037 - log\train.log - INFO - model saved
+2019-06-26 02:27:28,037 - log\train.log - INFO - evaluate:test
+2019-06-26 02:27:36,386 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 5598 phrases; correct: 473.
+
+2019-06-26 02:27:36,386 - log\train.log - INFO - accuracy:  67.21%; precision:   8.45%; recall:   5.27%; FB1:   6.49
+
+2019-06-26 02:27:36,386 - log\train.log - INFO -              BODY: precision:  11.68%; recall:  11.89%; FB1:  11.78  3595
+
+2019-06-26 02:27:36,386 - log\train.log - INFO -             CHECK: precision:   1.96%; recall:   0.41%; FB1:   0.68  613
+
+2019-06-26 02:27:36,386 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:27:36,386 - log\train.log - INFO -             SIGNS: precision:   2.96%; recall:   1.69%; FB1:   2.15  1385
+
+2019-06-26 02:27:36,386 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  5
+
+2019-06-26 02:27:36,503 - log\train.log - INFO - new best test f1 score:6.490
+2019-06-26 02:31:01,055 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:31:05,200 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 1758 phrases; correct: 105.
+
+2019-06-26 02:31:05,200 - log\train.log - INFO - accuracy:  78.75%; precision:   5.97%; recall:   3.55%; FB1:   4.46
+
+2019-06-26 02:31:05,200 - log\train.log - INFO -              BODY: precision:   6.82%; recall:   6.36%; FB1:   6.58  968
+
+2019-06-26 02:31:05,200 - log\train.log - INFO -             CHECK: precision:   3.88%; recall:   1.16%; FB1:   1.78  232
+
+2019-06-26 02:31:05,200 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:31:05,201 - log\train.log - INFO -             SIGNS: precision:   5.39%; recall:   2.82%; FB1:   3.70  557
+
+2019-06-26 02:31:05,201 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:31:05,313 - log\train.log - INFO - new best dev f1 score:4.460
+2019-06-26 02:31:08,075 - log\train.log - INFO - model saved
+2019-06-26 02:31:08,075 - log\train.log - INFO - evaluate:test
+2019-06-26 02:31:16,571 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 5434 phrases; correct: 462.
+
+2019-06-26 02:31:16,571 - log\train.log - INFO - accuracy:  67.03%; precision:   8.50%; recall:   5.15%; FB1:   6.41
+
+2019-06-26 02:31:16,571 - log\train.log - INFO -              BODY: precision:  11.82%; recall:  11.58%; FB1:  11.70  3461
+
+2019-06-26 02:31:16,571 - log\train.log - INFO -             CHECK: precision:   1.82%; recall:   0.34%; FB1:   0.57  549
+
+2019-06-26 02:31:16,572 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:31:16,572 - log\train.log - INFO -             SIGNS: precision:   3.05%; recall:   1.78%; FB1:   2.24  1412
+
+2019-06-26 02:31:16,572 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  12
+
+2019-06-26 02:34:45,765 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:34:49,911 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 1666 phrases; correct: 95.
+
+2019-06-26 02:34:49,911 - log\train.log - INFO - accuracy:  78.58%; precision:   5.70%; recall:   3.22%; FB1:   4.11
+
+2019-06-26 02:34:49,911 - log\train.log - INFO -              BODY: precision:   5.92%; recall:   5.39%; FB1:   5.65  946
+
+2019-06-26 02:34:49,912 - log\train.log - INFO -             CHECK: precision:   4.71%; recall:   1.16%; FB1:   1.86  191
+
+2019-06-26 02:34:49,912 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:34:49,912 - log\train.log - INFO -             SIGNS: precision:   5.68%; recall:   2.82%; FB1:   3.77  528
+
+2019-06-26 02:34:49,912 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:34:49,913 - log\train.log - INFO - evaluate:test
+2019-06-26 02:34:58,238 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 5152 phrases; correct: 430.
+
+2019-06-26 02:34:58,239 - log\train.log - INFO - accuracy:  66.75%; precision:   8.35%; recall:   4.79%; FB1:   6.09
+
+2019-06-26 02:34:58,239 - log\train.log - INFO -              BODY: precision:  11.30%; recall:  10.61%; FB1:  10.95  3319
+
+2019-06-26 02:34:58,239 - log\train.log - INFO -             CHECK: precision:   1.69%; recall:   0.27%; FB1:   0.47  473
+
+2019-06-26 02:34:58,239 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:34:58,239 - log\train.log - INFO -             SIGNS: precision:   3.49%; recall:   1.94%; FB1:   2.49  1348
+
+2019-06-26 02:34:58,239 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  12
+
+2019-06-26 02:38:07,846 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:38:12,398 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 1644 phrases; correct: 113.
+
+2019-06-26 02:38:12,398 - log\train.log - INFO - accuracy:  78.73%; precision:   6.87%; recall:   3.83%; FB1:   4.92
+
+2019-06-26 02:38:12,398 - log\train.log - INFO -              BODY: precision:   7.16%; recall:   6.36%; FB1:   6.73  922
+
+2019-06-26 02:38:12,398 - log\train.log - INFO -             CHECK: precision:   6.74%; recall:   1.67%; FB1:   2.68  193
+
+2019-06-26 02:38:12,398 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:38:12,398 - log\train.log - INFO -             SIGNS: precision:   6.44%; recall:   3.19%; FB1:   4.27  528
+
+2019-06-26 02:38:12,398 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:38:12,518 - log\train.log - INFO - new best dev f1 score:4.920
+2019-06-26 02:38:15,152 - log\train.log - INFO - model saved
+2019-06-26 02:38:15,152 - log\train.log - INFO - evaluate:test
+2019-06-26 02:38:23,707 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 5167 phrases; correct: 453.
+
+2019-06-26 02:38:23,707 - log\train.log - INFO - accuracy:  66.91%; precision:   8.77%; recall:   5.05%; FB1:   6.41
+
+2019-06-26 02:38:23,707 - log\train.log - INFO -              BODY: precision:  11.89%; recall:  11.10%; FB1:  11.48  3296
+
+2019-06-26 02:38:23,707 - log\train.log - INFO -             CHECK: precision:   2.47%; recall:   0.41%; FB1:   0.70  485
+
+2019-06-26 02:38:23,707 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:38:23,707 - log\train.log - INFO -             SIGNS: precision:   3.58%; recall:   2.02%; FB1:   2.59  1368
+
+2019-06-26 02:38:23,707 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  18
+
+2019-06-26 02:41:33,072 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:41:37,259 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 1709 phrases; correct: 166.
+
+2019-06-26 02:41:37,260 - log\train.log - INFO - accuracy:  79.44%; precision:   9.71%; recall:   5.62%; FB1:   7.12
+
+2019-06-26 02:41:37,260 - log\train.log - INFO -              BODY: precision:   9.30%; recall:   8.48%; FB1:   8.87  946
+
+2019-06-26 02:41:37,260 - log\train.log - INFO -             CHECK: precision:  12.63%; recall:   3.22%; FB1:   5.13  198
+
+2019-06-26 02:41:37,260 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:41:37,260 - log\train.log - INFO -             SIGNS: precision:   9.40%; recall:   4.98%; FB1:   6.51  564
+
+2019-06-26 02:41:37,260 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 02:41:37,373 - log\train.log - INFO - new best dev f1 score:7.120
+2019-06-26 02:41:40,094 - log\train.log - INFO - model saved
+2019-06-26 02:41:40,094 - log\train.log - INFO - evaluate:test
+2019-06-26 02:41:48,564 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 5572 phrases; correct: 552.
+
+2019-06-26 02:41:48,564 - log\train.log - INFO - accuracy:  67.50%; precision:   9.91%; recall:   6.15%; FB1:   7.59
+
+2019-06-26 02:41:48,564 - log\train.log - INFO -              BODY: precision:  12.38%; recall:  12.31%; FB1:  12.34  3515
+
+2019-06-26 02:41:48,564 - log\train.log - INFO -             CHECK: precision:   5.75%; recall:   1.09%; FB1:   1.83  557
+
+2019-06-26 02:41:48,564 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:41:48,564 - log\train.log - INFO -             SIGNS: precision:   5.74%; recall:   3.51%; FB1:   4.36  1480
+
+2019-06-26 02:41:48,564 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  20
+
+2019-06-26 02:41:48,679 - log\train.log - INFO - new best test f1 score:7.590
+2019-06-26 02:44:59,868 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:45:03,971 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 1981 phrases; correct: 266.
+
+2019-06-26 02:45:03,971 - log\train.log - INFO - accuracy:  80.35%; precision:  13.43%; recall:   9.00%; FB1:  10.78
+
+2019-06-26 02:45:03,971 - log\train.log - INFO -              BODY: precision:   9.97%; recall:   9.54%; FB1:   9.75  993
+
+2019-06-26 02:45:03,971 - log\train.log - INFO -             CHECK: precision:   7.67%; recall:   2.83%; FB1:   4.14  287
+
+2019-06-26 02:45:03,971 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:45:03,971 - log\train.log - INFO -             SIGNS: precision:  20.74%; recall:  13.62%; FB1:  16.44  699
+
+2019-06-26 02:45:03,971 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  2
+
+2019-06-26 02:45:04,096 - log\train.log - INFO - new best dev f1 score:10.780
+2019-06-26 02:45:06,579 - log\train.log - INFO - model saved
+2019-06-26 02:45:06,579 - log\train.log - INFO - evaluate:test
+2019-06-26 02:45:14,916 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 6245 phrases; correct: 685.
+
+2019-06-26 02:45:14,917 - log\train.log - INFO - accuracy:  68.34%; precision:  10.97%; recall:   7.63%; FB1:   9.00
+
+2019-06-26 02:45:14,917 - log\train.log - INFO -              BODY: precision:  13.30%; recall:  14.07%; FB1:  13.67  3737
+
+2019-06-26 02:45:14,917 - log\train.log - INFO -             CHECK: precision:   5.37%; recall:   1.39%; FB1:   2.21  763
+
+2019-06-26 02:45:14,917 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:45:14,917 - log\train.log - INFO -             SIGNS: precision:   8.53%; recall:   6.07%; FB1:   7.09  1723
+
+2019-06-26 02:45:14,917 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  22
+
+2019-06-26 02:45:15,027 - log\train.log - INFO - new best test f1 score:9.000
+2019-06-26 02:48:23,687 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:48:28,008 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 2336 phrases; correct: 330.
+
+2019-06-26 02:48:28,008 - log\train.log - INFO - accuracy:  81.13%; precision:  14.13%; recall:  11.17%; FB1:  12.48
+
+2019-06-26 02:48:28,009 - log\train.log - INFO -              BODY: precision:  11.34%; recall:  12.24%; FB1:  11.77  1120
+
+2019-06-26 02:48:28,009 - log\train.log - INFO -             CHECK: precision:   5.79%; recall:   2.96%; FB1:   3.92  397
+
+2019-06-26 02:48:28,009 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:48:28,009 - log\train.log - INFO -             SIGNS: precision:  22.09%; recall:  16.90%; FB1:  19.15  815
+
+2019-06-26 02:48:28,009 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  4
+
+2019-06-26 02:48:28,120 - log\train.log - INFO - new best dev f1 score:12.480
+2019-06-26 02:48:30,756 - log\train.log - INFO - model saved
+2019-06-26 02:48:30,756 - log\train.log - INFO - evaluate:test
+2019-06-26 02:48:39,049 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 7321 phrases; correct: 861.
+
+2019-06-26 02:48:39,050 - log\train.log - INFO - accuracy:  69.48%; precision:  11.76%; recall:   9.60%; FB1:  10.57
+
+2019-06-26 02:48:39,050 - log\train.log - INFO -              BODY: precision:  13.88%; recall:  16.16%; FB1:  14.93  4114
+
+2019-06-26 02:48:39,050 - log\train.log - INFO -             CHECK: precision:   7.16%; recall:   2.69%; FB1:   3.91  1104
+
+2019-06-26 02:48:39,050 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:48:39,050 - log\train.log - INFO -             SIGNS: precision:  10.13%; recall:   8.72%; FB1:   9.37  2082
+
+2019-06-26 02:48:39,050 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  21
+
+2019-06-26 02:48:39,163 - log\train.log - INFO - new best test f1 score:10.570
+2019-06-26 02:51:48,923 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:51:53,155 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 2501 phrases; correct: 371.
+
+2019-06-26 02:51:53,155 - log\train.log - INFO - accuracy:  81.89%; precision:  14.83%; recall:  12.56%; FB1:  13.60
+
+2019-06-26 02:51:53,155 - log\train.log - INFO -              BODY: precision:  13.29%; recall:  14.84%; FB1:  14.02  1159
+
+2019-06-26 02:51:53,155 - log\train.log - INFO -             CHECK: precision:   5.62%; recall:   2.96%; FB1:   3.88  409
+
+2019-06-26 02:51:53,155 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:51:53,155 - log\train.log - INFO -             SIGNS: precision:  20.91%; recall:  18.22%; FB1:  19.47  928
+
+2019-06-26 02:51:53,155 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  5
+
+2019-06-26 02:51:53,270 - log\train.log - INFO - new best dev f1 score:13.600
+2019-06-26 02:51:55,932 - log\train.log - INFO - model saved
+2019-06-26 02:51:55,933 - log\train.log - INFO - evaluate:test
+2019-06-26 02:52:04,420 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 7859 phrases; correct: 969.
+
+2019-06-26 02:52:04,420 - log\train.log - INFO - accuracy:  70.38%; precision:  12.33%; recall:  10.80%; FB1:  11.51
+
+2019-06-26 02:52:04,420 - log\train.log - INFO -              BODY: precision:  15.00%; recall:  18.26%; FB1:  16.47  4299
+
+2019-06-26 02:52:04,420 - log\train.log - INFO -             CHECK: precision:   6.13%; recall:   2.52%; FB1:   3.57  1208
+
+2019-06-26 02:52:04,420 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:52:04,420 - log\train.log - INFO -             SIGNS: precision:  10.77%; recall:  10.33%; FB1:  10.54  2321
+
+2019-06-26 02:52:04,420 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  31
+
+2019-06-26 02:52:04,533 - log\train.log - INFO - new best test f1 score:11.510
+2019-06-26 02:55:15,095 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:55:19,345 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 2685 phrases; correct: 423.
+
+2019-06-26 02:55:19,346 - log\train.log - INFO - accuracy:  82.59%; precision:  15.75%; recall:  14.32%; FB1:  15.00
+
+2019-06-26 02:55:19,346 - log\train.log - INFO -              BODY: precision:  15.45%; recall:  18.50%; FB1:  16.83  1243
+
+2019-06-26 02:55:19,346 - log\train.log - INFO -             CHECK: precision:   6.07%; recall:   3.60%; FB1:   4.52  461
+
+2019-06-26 02:55:19,346 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:55:19,346 - log\train.log - INFO -             SIGNS: precision:  20.84%; recall:  19.06%; FB1:  19.91  974
+
+2019-06-26 02:55:19,346 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  7
+
+2019-06-26 02:55:19,477 - log\train.log - INFO - new best dev f1 score:15.000
+2019-06-26 02:55:22,169 - log\train.log - INFO - model saved
+2019-06-26 02:55:22,169 - log\train.log - INFO - evaluate:test
+2019-06-26 02:55:30,647 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 8244 phrases; correct: 1087.
+
+2019-06-26 02:55:30,647 - log\train.log - INFO - accuracy:  71.41%; precision:  13.19%; recall:  12.12%; FB1:  12.63
+
+2019-06-26 02:55:30,647 - log\train.log - INFO -              BODY: precision:  16.07%; recall:  20.38%; FB1:  17.97  4480
+
+2019-06-26 02:55:30,647 - log\train.log - INFO -             CHECK: precision:   7.65%; recall:   3.13%; FB1:   4.44  1203
+
+2019-06-26 02:55:30,647 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:55:30,647 - log\train.log - INFO -             SIGNS: precision:  10.90%; recall:  11.36%; FB1:  11.12  2523
+
+2019-06-26 02:55:30,647 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  38
+
+2019-06-26 02:55:30,757 - log\train.log - INFO - new best test f1 score:12.630
+2019-06-26 02:58:43,855 - log\train.log - INFO - evaluate:dev
+2019-06-26 02:58:48,149 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 2724 phrases; correct: 474.
+
+2019-06-26 02:58:48,150 - log\train.log - INFO - accuracy:  82.69%; precision:  17.40%; recall:  16.05%; FB1:  16.70
+
+2019-06-26 02:58:48,150 - log\train.log - INFO -              BODY: precision:  15.94%; recall:  19.08%; FB1:  17.37  1242
+
+2019-06-26 02:58:48,150 - log\train.log - INFO -             CHECK: precision:  14.32%; recall:   8.75%; FB1:  10.86  475
+
+2019-06-26 02:58:48,150 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:58:48,150 - log\train.log - INFO -             SIGNS: precision:  20.90%; recall:  19.53%; FB1:  20.19  995
+
+2019-06-26 02:58:48,151 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  12
+
+2019-06-26 02:58:48,268 - log\train.log - INFO - new best dev f1 score:16.700
+2019-06-26 02:58:50,786 - log\train.log - INFO - model saved
+2019-06-26 02:58:50,786 - log\train.log - INFO - evaluate:test
+2019-06-26 02:58:59,239 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 8259 phrases; correct: 1187.
+
+2019-06-26 02:58:59,239 - log\train.log - INFO - accuracy:  71.84%; precision:  14.37%; recall:  13.23%; FB1:  13.78
+
+2019-06-26 02:58:59,239 - log\train.log - INFO -              BODY: precision:  17.12%; recall:  21.48%; FB1:  19.05  4434
+
+2019-06-26 02:58:59,239 - log\train.log - INFO -             CHECK: precision:  11.84%; recall:   4.86%; FB1:   6.89  1208
+
+2019-06-26 02:58:59,239 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 02:58:59,239 - log\train.log - INFO -             SIGNS: precision:  11.07%; recall:  11.77%; FB1:  11.41  2575
+
+2019-06-26 02:58:59,239 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  42
+
+2019-06-26 02:58:59,352 - log\train.log - INFO - new best test f1 score:13.780
+2019-06-26 03:02:11,572 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:02:15,704 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 2643 phrases; correct: 459.
+
+2019-06-26 03:02:15,705 - log\train.log - INFO - accuracy:  82.76%; precision:  17.37%; recall:  15.54%; FB1:  16.40
+
+2019-06-26 03:02:15,705 - log\train.log - INFO -              BODY: precision:  16.46%; recall:  19.27%; FB1:  17.75  1215
+
+2019-06-26 03:02:15,705 - log\train.log - INFO -             CHECK: precision:  11.06%; recall:   6.56%; FB1:   8.24  461
+
+2019-06-26 03:02:15,705 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:02:15,705 - log\train.log - INFO -             SIGNS: precision:  21.78%; recall:  19.53%; FB1:  20.59  955
+
+2019-06-26 03:02:15,705 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  12
+
+2019-06-26 03:02:15,706 - log\train.log - INFO - evaluate:test
+2019-06-26 03:02:24,026 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 8005 phrases; correct: 1152.
+
+2019-06-26 03:02:24,026 - log\train.log - INFO - accuracy:  72.00%; precision:  14.39%; recall:  12.84%; FB1:  13.57
+
+2019-06-26 03:02:24,026 - log\train.log - INFO -              BODY: precision:  17.47%; recall:  21.03%; FB1:  19.09  4252
+
+2019-06-26 03:02:24,026 - log\train.log - INFO -             CHECK: precision:  10.37%; recall:   4.22%; FB1:   6.00  1196
+
+2019-06-26 03:02:24,026 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:02:24,026 - log\train.log - INFO -             SIGNS: precision:  11.34%; recall:  11.77%; FB1:  11.55  2513
+
+2019-06-26 03:02:24,027 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  44
+
+2019-06-26 03:05:36,849 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:05:41,180 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 2593 phrases; correct: 490.
+
+2019-06-26 03:05:41,180 - log\train.log - INFO - accuracy:  82.84%; precision:  18.90%; recall:  16.59%; FB1:  17.67
+
+2019-06-26 03:05:41,180 - log\train.log - INFO -              BODY: precision:  17.79%; recall:  19.85%; FB1:  18.76  1158
+
+2019-06-26 03:05:41,180 - log\train.log - INFO -             CHECK: precision:  16.49%; recall:   9.78%; FB1:  12.28  461
+
+2019-06-26 03:05:41,180 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:05:41,180 - log\train.log - INFO -             SIGNS: precision:  21.62%; recall:  19.53%; FB1:  20.52  962
+
+2019-06-26 03:05:41,180 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  12
+
+2019-06-26 03:05:41,305 - log\train.log - INFO - new best dev f1 score:17.670
+2019-06-26 03:05:43,931 - log\train.log - INFO - model saved
+2019-06-26 03:05:43,931 - log\train.log - INFO - evaluate:test
+2019-06-26 03:05:52,326 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 7865 phrases; correct: 1187.
+
+2019-06-26 03:05:52,326 - log\train.log - INFO - accuracy:  72.23%; precision:  15.09%; recall:  13.23%; FB1:  14.10
+
+2019-06-26 03:05:52,326 - log\train.log - INFO -              BODY: precision:  18.06%; recall:  20.92%; FB1:  19.38  4092
+
+2019-06-26 03:05:52,327 - log\train.log - INFO -             CHECK: precision:  13.80%; recall:   5.65%; FB1:   8.01  1203
+
+2019-06-26 03:05:52,327 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:05:52,327 - log\train.log - INFO -             SIGNS: precision:  11.17%; recall:  11.65%; FB1:  11.40  2525
+
+2019-06-26 03:05:52,327 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  45
+
+2019-06-26 03:05:52,439 - log\train.log - INFO - new best test f1 score:14.100
+2019-06-26 03:09:04,122 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:09:08,443 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 2623 phrases; correct: 571.
+
+2019-06-26 03:09:08,443 - log\train.log - INFO - accuracy:  82.89%; precision:  21.77%; recall:  19.33%; FB1:  20.48
+
+2019-06-26 03:09:08,443 - log\train.log - INFO -              BODY: precision:  18.99%; recall:  21.39%; FB1:  20.12  1169
+
+2019-06-26 03:09:08,443 - log\train.log - INFO -             CHECK: precision:  27.45%; recall:  17.63%; FB1:  21.47  499
+
+2019-06-26 03:09:08,443 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:09:08,443 - log\train.log - INFO -             SIGNS: precision:  22.51%; recall:  19.91%; FB1:  21.13  942
+
+2019-06-26 03:09:08,443 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  13
+
+2019-06-26 03:09:08,567 - log\train.log - INFO - new best dev f1 score:20.480
+2019-06-26 03:09:13,684 - log\train.log - INFO - model saved
+2019-06-26 03:09:13,685 - log\train.log - INFO - evaluate:test
+2019-06-26 03:09:22,055 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 7929 phrases; correct: 1303.
+
+2019-06-26 03:09:22,056 - log\train.log - INFO - accuracy:  72.80%; precision:  16.43%; recall:  14.52%; FB1:  15.42
+
+2019-06-26 03:09:22,056 - log\train.log - INFO -              BODY: precision:  19.23%; recall:  21.94%; FB1:  20.49  4030
+
+2019-06-26 03:09:22,056 - log\train.log - INFO -             CHECK: precision:  18.34%; recall:   8.06%; FB1:  11.20  1292
+
+2019-06-26 03:09:22,056 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:09:22,056 - log\train.log - INFO -             SIGNS: precision:  11.36%; recall:  12.02%; FB1:  11.68  2562
+
+2019-06-26 03:09:22,056 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  45
+
+2019-06-26 03:09:22,167 - log\train.log - INFO - new best test f1 score:15.420
+2019-06-26 03:12:36,728 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:12:40,915 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 2804 phrases; correct: 662.
+
+2019-06-26 03:12:40,915 - log\train.log - INFO - accuracy:  83.67%; precision:  23.61%; recall:  22.41%; FB1:  22.99
+
+2019-06-26 03:12:40,915 - log\train.log - INFO -              BODY: precision:  23.71%; recall:  28.81%; FB1:  26.01  1261
+
+2019-06-26 03:12:40,915 - log\train.log - INFO -             CHECK: precision:  25.18%; recall:  17.63%; FB1:  20.74  544
+
+2019-06-26 03:12:40,915 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:12:40,915 - log\train.log - INFO -             SIGNS: precision:  22.97%; recall:  21.22%; FB1:  22.06  984
+
+2019-06-26 03:12:40,915 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  15
+
+2019-06-26 03:12:41,034 - log\train.log - INFO - new best dev f1 score:22.990
+2019-06-26 03:12:43,743 - log\train.log - INFO - model saved
+2019-06-26 03:12:43,744 - log\train.log - INFO - evaluate:test
+2019-06-26 03:12:52,110 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 8364 phrases; correct: 1522.
+
+2019-06-26 03:12:52,110 - log\train.log - INFO - accuracy:  73.87%; precision:  18.20%; recall:  16.96%; FB1:  17.56
+
+2019-06-26 03:12:52,110 - log\train.log - INFO -              BODY: precision:  22.82%; recall:  26.83%; FB1:  24.66  4155
+
+2019-06-26 03:12:52,110 - log\train.log - INFO -             CHECK: precision:  18.05%; recall:   8.95%; FB1:  11.96  1457
+
+2019-06-26 03:12:52,110 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:12:52,111 - log\train.log - INFO -             SIGNS: precision:  11.48%; recall:  12.85%; FB1:  12.12  2709
+
+2019-06-26 03:12:52,111 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  43
+
+2019-06-26 03:12:52,221 - log\train.log - INFO - new best test f1 score:17.560
+2019-06-26 03:16:05,936 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:16:10,070 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3126 phrases; correct: 727.
+
+2019-06-26 03:16:10,070 - log\train.log - INFO - accuracy:  84.58%; precision:  23.26%; recall:  24.61%; FB1:  23.91
+
+2019-06-26 03:16:10,070 - log\train.log - INFO -              BODY: precision:  24.33%; recall:  31.41%; FB1:  27.42  1340
+
+2019-06-26 03:16:10,070 - log\train.log - INFO -             CHECK: precision:  22.77%; recall:  20.08%; FB1:  21.34  685
+
+2019-06-26 03:16:10,070 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:16:10,070 - log\train.log - INFO -             SIGNS: precision:  22.62%; recall:  23.00%; FB1:  22.81  1083
+
+2019-06-26 03:16:10,071 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  18
+
+2019-06-26 03:16:10,182 - log\train.log - INFO - new best dev f1 score:23.910
+2019-06-26 03:16:12,932 - log\train.log - INFO - model saved
+2019-06-26 03:16:12,933 - log\train.log - INFO - evaluate:test
+2019-06-26 03:16:21,414 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9087 phrases; correct: 1780.
+
+2019-06-26 03:16:21,414 - log\train.log - INFO - accuracy:  75.23%; precision:  19.59%; recall:  19.84%; FB1:  19.71
+
+2019-06-26 03:16:21,414 - log\train.log - INFO -              BODY: precision:  26.09%; recall:  31.45%; FB1:  28.52  4258
+
+2019-06-26 03:16:21,414 - log\train.log - INFO -             CHECK: precision:  18.42%; recall:  11.05%; FB1:  13.82  1764
+
+2019-06-26 03:16:21,414 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:16:21,414 - log\train.log - INFO -             SIGNS: precision:  11.40%; recall:  14.21%; FB1:  12.65  3017
+
+2019-06-26 03:16:21,414 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  48
+
+2019-06-26 03:16:21,537 - log\train.log - INFO - new best test f1 score:19.710
+2019-06-26 03:19:37,959 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:19:42,319 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3235 phrases; correct: 829.
+
+2019-06-26 03:19:42,319 - log\train.log - INFO - accuracy:  85.31%; precision:  25.63%; recall:  28.06%; FB1:  26.79
+
+2019-06-26 03:19:42,319 - log\train.log - INFO -              BODY: precision:  28.41%; recall:  36.71%; FB1:  32.03  1341
+
+2019-06-26 03:19:42,319 - log\train.log - INFO -             CHECK: precision:  25.14%; recall:  23.55%; FB1:  24.32  728
+
+2019-06-26 03:19:42,319 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:19:42,319 - log\train.log - INFO -             SIGNS: precision:  23.33%; recall:  24.88%; FB1:  24.08  1136
+
+2019-06-26 03:19:42,319 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  30
+
+2019-06-26 03:19:42,451 - log\train.log - INFO - new best dev f1 score:26.790
+2019-06-26 03:19:44,950 - log\train.log - INFO - model saved
+2019-06-26 03:19:44,951 - log\train.log - INFO - evaluate:test
+2019-06-26 03:19:53,344 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9439 phrases; correct: 2087.
+
+2019-06-26 03:19:53,344 - log\train.log - INFO - accuracy:  76.25%; precision:  22.11%; recall:  23.26%; FB1:  22.67
+
+2019-06-26 03:19:53,344 - log\train.log - INFO -              BODY: precision:  28.86%; recall:  35.24%; FB1:  31.73  4314
+
+2019-06-26 03:19:53,345 - log\train.log - INFO -             CHECK: precision:  22.94%; recall:  15.17%; FB1:  18.26  1944
+
+2019-06-26 03:19:53,345 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:19:53,345 - log\train.log - INFO -             SIGNS: precision:  12.66%; recall:  16.36%; FB1:  14.27  3129
+
+2019-06-26 03:19:53,345 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  52
+
+2019-06-26 03:19:53,457 - log\train.log - INFO - new best test f1 score:22.670
+2019-06-26 03:23:09,428 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:23:13,742 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3348 phrases; correct: 864.
+
+2019-06-26 03:23:13,742 - log\train.log - INFO - accuracy:  85.60%; precision:  25.81%; recall:  29.25%; FB1:  27.42
+
+2019-06-26 03:23:13,742 - log\train.log - INFO -              BODY: precision:  29.68%; recall:  38.34%; FB1:  33.46  1341
+
+2019-06-26 03:23:13,742 - log\train.log - INFO -             CHECK: precision:  24.31%; recall:  25.10%; FB1:  24.70  802
+
+2019-06-26 03:23:13,742 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:23:13,742 - log\train.log - INFO -             SIGNS: precision:  23.30%; recall:  25.45%; FB1:  24.33  1163
+
+2019-06-26 03:23:13,742 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  42
+
+2019-06-26 03:23:13,859 - log\train.log - INFO - new best dev f1 score:27.420
+2019-06-26 03:23:16,559 - log\train.log - INFO - model saved
+2019-06-26 03:23:16,559 - log\train.log - INFO - evaluate:test
+2019-06-26 03:23:24,928 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9680 phrases; correct: 2193.
+
+2019-06-26 03:23:24,928 - log\train.log - INFO - accuracy:  76.77%; precision:  22.65%; recall:  24.44%; FB1:  23.51
+
+2019-06-26 03:23:24,928 - log\train.log - INFO -              BODY: precision:  29.75%; recall:  36.31%; FB1:  32.71  4312
+
+2019-06-26 03:23:24,929 - log\train.log - INFO -             CHECK: precision:  22.95%; recall:  16.46%; FB1:  19.17  2109
+
+2019-06-26 03:23:24,929 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:23:24,929 - log\train.log - INFO -             SIGNS: precision:  13.28%; recall:  17.60%; FB1:  15.14  3208
+
+2019-06-26 03:23:24,929 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  51
+
+2019-06-26 03:23:25,041 - log\train.log - INFO - new best test f1 score:23.510
+2019-06-26 03:26:42,322 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:26:46,454 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3326 phrases; correct: 878.
+
+2019-06-26 03:26:46,454 - log\train.log - INFO - accuracy:  85.74%; precision:  26.40%; recall:  29.72%; FB1:  27.96
+
+2019-06-26 03:26:46,454 - log\train.log - INFO -              BODY: precision:  30.91%; recall:  39.31%; FB1:  34.61  1320
+
+2019-06-26 03:26:46,454 - log\train.log - INFO -             CHECK: precision:  24.34%; recall:  25.10%; FB1:  24.71  801
+
+2019-06-26 03:26:46,455 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:26:46,455 - log\train.log - INFO -             SIGNS: precision:  23.67%; recall:  25.82%; FB1:  24.70  1162
+
+2019-06-26 03:26:46,455 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  43
+
+2019-06-26 03:26:46,570 - log\train.log - INFO - new best dev f1 score:27.960
+2019-06-26 03:26:49,137 - log\train.log - INFO - model saved
+2019-06-26 03:26:49,137 - log\train.log - INFO - evaluate:test
+2019-06-26 03:26:57,713 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9639 phrases; correct: 2211.
+
+2019-06-26 03:26:57,713 - log\train.log - INFO - accuracy:  77.04%; precision:  22.94%; recall:  24.64%; FB1:  23.76
+
+2019-06-26 03:26:57,713 - log\train.log - INFO -              BODY: precision:  30.80%; recall:  36.80%; FB1:  33.53  4221
+
+2019-06-26 03:26:57,713 - log\train.log - INFO -             CHECK: precision:  22.06%; recall:  16.19%; FB1:  18.67  2158
+
+2019-06-26 03:26:57,713 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:26:57,713 - log\train.log - INFO -             SIGNS: precision:  13.57%; recall:  17.97%; FB1:  15.46  3206
+
+2019-06-26 03:26:57,713 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  54
+
+2019-06-26 03:26:57,823 - log\train.log - INFO - new best test f1 score:23.760
+2019-06-26 03:30:15,892 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:30:20,013 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3270 phrases; correct: 910.
+
+2019-06-26 03:30:20,014 - log\train.log - INFO - accuracy:  86.05%; precision:  27.83%; recall:  30.81%; FB1:  29.24
+
+2019-06-26 03:30:20,014 - log\train.log - INFO -              BODY: precision:  34.53%; recall:  42.49%; FB1:  38.10  1277
+
+2019-06-26 03:30:20,014 - log\train.log - INFO -             CHECK: precision:  24.75%; recall:  25.48%; FB1:  25.11  800
+
+2019-06-26 03:30:20,014 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:30:20,014 - log\train.log - INFO -             SIGNS: precision:  23.69%; recall:  25.45%; FB1:  24.54  1144
+
+2019-06-26 03:30:20,014 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  49
+
+2019-06-26 03:30:20,134 - log\train.log - INFO - new best dev f1 score:29.240
+2019-06-26 03:30:22,825 - log\train.log - INFO - model saved
+2019-06-26 03:30:22,826 - log\train.log - INFO - evaluate:test
+2019-06-26 03:30:31,198 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9519 phrases; correct: 2292.
+
+2019-06-26 03:30:31,198 - log\train.log - INFO - accuracy:  77.42%; precision:  24.08%; recall:  25.55%; FB1:  24.79
+
+2019-06-26 03:30:31,198 - log\train.log - INFO -              BODY: precision:  32.58%; recall:  38.13%; FB1:  35.13  4135
+
+2019-06-26 03:30:31,198 - log\train.log - INFO -             CHECK: precision:  21.59%; recall:  15.95%; FB1:  18.35  2172
+
+2019-06-26 03:30:31,198 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:30:31,198 - log\train.log - INFO -             SIGNS: precision:  15.08%; recall:  19.66%; FB1:  17.07  3157
+
+2019-06-26 03:30:31,199 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  55
+
+2019-06-26 03:30:31,310 - log\train.log - INFO - new best test f1 score:24.790
+2019-06-26 03:33:48,738 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:33:53,072 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3290 phrases; correct: 933.
+
+2019-06-26 03:33:53,073 - log\train.log - INFO - accuracy:  86.22%; precision:  28.36%; recall:  31.58%; FB1:  29.88
+
+2019-06-26 03:33:53,073 - log\train.log - INFO -              BODY: precision:  36.65%; recall:  44.03%; FB1:  40.00  1247
+
+2019-06-26 03:33:53,073 - log\train.log - INFO -             CHECK: precision:  24.49%; recall:  26.25%; FB1:  25.34  833
+
+2019-06-26 03:33:53,073 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:33:53,073 - log\train.log - INFO -             SIGNS: precision:  23.43%; recall:  25.54%; FB1:  24.44  1161
+
+2019-06-26 03:33:53,073 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  49
+
+2019-06-26 03:33:53,194 - log\train.log - INFO - new best dev f1 score:29.880
+2019-06-26 03:33:55,885 - log\train.log - INFO - model saved
+2019-06-26 03:33:55,886 - log\train.log - INFO - evaluate:test
+2019-06-26 03:34:04,401 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9599 phrases; correct: 2423.
+
+2019-06-26 03:34:04,402 - log\train.log - INFO - accuracy:  78.15%; precision:  25.24%; recall:  27.01%; FB1:  26.09
+
+2019-06-26 03:34:04,402 - log\train.log - INFO -              BODY: precision:  34.87%; recall:  40.19%; FB1:  37.34  4072
+
+2019-06-26 03:34:04,402 - log\train.log - INFO -             CHECK: precision:  21.12%; recall:  16.63%; FB1:  18.61  2315
+
+2019-06-26 03:34:04,402 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:34:04,403 - log\train.log - INFO -             SIGNS: precision:  16.34%; recall:  21.23%; FB1:  18.47  3146
+
+2019-06-26 03:34:04,403 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  66
+
+2019-06-26 03:34:04,514 - log\train.log - INFO - new best test f1 score:26.090
+2019-06-26 03:37:23,457 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:37:27,594 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3469 phrases; correct: 1024.
+
+2019-06-26 03:37:27,594 - log\train.log - INFO - accuracy:  86.97%; precision:  29.52%; recall:  34.66%; FB1:  31.89
+
+2019-06-26 03:37:27,594 - log\train.log - INFO -              BODY: precision:  38.11%; recall:  45.86%; FB1:  41.63  1249
+
+2019-06-26 03:37:27,594 - log\train.log - INFO -             CHECK: precision:  22.58%; recall:  26.38%; FB1:  24.33  908
+
+2019-06-26 03:37:27,594 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:37:27,594 - log\train.log - INFO -             SIGNS: precision:  27.33%; recall:  32.21%; FB1:  29.57  1255
+
+2019-06-26 03:37:27,594 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  57
+
+2019-06-26 03:37:27,718 - log\train.log - INFO - new best dev f1 score:31.890
+2019-06-26 03:37:30,347 - log\train.log - INFO - model saved
+2019-06-26 03:37:30,347 - log\train.log - INFO - evaluate:test
+2019-06-26 03:37:39,082 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10086 phrases; correct: 2616.
+
+2019-06-26 03:37:39,082 - log\train.log - INFO - accuracy:  79.21%; precision:  25.94%; recall:  29.16%; FB1:  27.45
+
+2019-06-26 03:37:39,082 - log\train.log - INFO -              BODY: precision:  35.64%; recall:  41.18%; FB1:  38.21  4083
+
+2019-06-26 03:37:39,082 - log\train.log - INFO -             CHECK: precision:  20.06%; recall:  17.38%; FB1:  18.63  2547
+
+2019-06-26 03:37:39,082 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:37:39,082 - log\train.log - INFO -             SIGNS: precision:  19.23%; recall:  26.85%; FB1:  22.41  3381
+
+2019-06-26 03:37:39,082 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  75
+
+2019-06-26 03:37:39,198 - log\train.log - INFO - new best test f1 score:27.450
+2019-06-26 03:40:57,943 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:41:02,213 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3621 phrases; correct: 1108.
+
+2019-06-26 03:41:02,213 - log\train.log - INFO - accuracy:  87.33%; precision:  30.60%; recall:  37.51%; FB1:  33.70
+
+2019-06-26 03:41:02,213 - log\train.log - INFO -              BODY: precision:  40.44%; recall:  51.16%; FB1:  45.17  1313
+
+2019-06-26 03:41:02,213 - log\train.log - INFO -             CHECK: precision:  21.75%; recall:  27.54%; FB1:  24.30  984
+
+2019-06-26 03:41:02,214 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:41:02,214 - log\train.log - INFO -             SIGNS: precision:  28.81%; recall:  34.08%; FB1:  31.23  1260
+
+2019-06-26 03:41:02,214 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  64
+
+2019-06-26 03:41:02,332 - log\train.log - INFO - new best dev f1 score:33.700
+2019-06-26 03:41:05,004 - log\train.log - INFO - model saved
+2019-06-26 03:41:05,004 - log\train.log - INFO - evaluate:test
+2019-06-26 03:41:13,484 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10214 phrases; correct: 2915.
+
+2019-06-26 03:41:13,484 - log\train.log - INFO - accuracy:  80.37%; precision:  28.54%; recall:  32.49%; FB1:  30.39
+
+2019-06-26 03:41:13,484 - log\train.log - INFO -              BODY: precision:  38.52%; recall:  44.10%; FB1:  41.12  4045
+
+2019-06-26 03:41:13,484 - log\train.log - INFO -             CHECK: precision:  21.28%; recall:  19.25%; FB1:  20.21  2660
+
+2019-06-26 03:41:13,484 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:41:13,484 - log\train.log - INFO -             SIGNS: precision:  23.05%; recall:  32.67%; FB1:  27.03  3431
+
+2019-06-26 03:41:13,484 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  78
+
+2019-06-26 03:41:13,595 - log\train.log - INFO - new best test f1 score:30.390
+2019-06-26 03:44:33,259 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:44:37,466 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3657 phrases; correct: 1163.
+
+2019-06-26 03:44:37,466 - log\train.log - INFO - accuracy:  87.60%; precision:  31.80%; recall:  39.37%; FB1:  35.18
+
+2019-06-26 03:44:37,466 - log\train.log - INFO -              BODY: precision:  41.58%; recall:  52.31%; FB1:  46.33  1306
+
+2019-06-26 03:44:37,466 - log\train.log - INFO -             CHECK: precision:  24.46%; recall:  32.30%; FB1:  27.84  1026
+
+2019-06-26 03:44:37,466 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:44:37,466 - log\train.log - INFO -             SIGNS: precision:  29.24%; recall:  34.65%; FB1:  31.71  1262
+
+2019-06-26 03:44:37,466 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  63
+
+2019-06-26 03:44:37,583 - log\train.log - INFO - new best dev f1 score:35.180
+2019-06-26 03:44:40,282 - log\train.log - INFO - model saved
+2019-06-26 03:44:40,282 - log\train.log - INFO - evaluate:test
+2019-06-26 03:44:48,623 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10335 phrases; correct: 3174.
+
+2019-06-26 03:44:48,624 - log\train.log - INFO - accuracy:  81.18%; precision:  30.71%; recall:  35.38%; FB1:  32.88
+
+2019-06-26 03:44:48,624 - log\train.log - INFO -              BODY: precision:  40.31%; recall:  45.57%; FB1:  42.78  3994
+
+2019-06-26 03:44:48,624 - log\train.log - INFO -             CHECK: precision:  23.98%; recall:  22.69%; FB1:  23.31  2782
+
+2019-06-26 03:44:48,624 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:44:48,624 - log\train.log - INFO -             SIGNS: precision:  25.76%; recall:  37.05%; FB1:  30.39  3482
+
+2019-06-26 03:44:48,624 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  77
+
+2019-06-26 03:44:48,741 - log\train.log - INFO - new best test f1 score:32.880
+2019-06-26 03:48:07,131 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:48:11,612 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3613 phrases; correct: 1205.
+
+2019-06-26 03:48:11,612 - log\train.log - INFO - accuracy:  87.78%; precision:  33.35%; recall:  40.79%; FB1:  36.70
+
+2019-06-26 03:48:11,612 - log\train.log - INFO -              BODY: precision:  42.08%; recall:  51.93%; FB1:  46.49  1281
+
+2019-06-26 03:48:11,612 - log\train.log - INFO -             CHECK: precision:  28.39%; recall:  37.97%; FB1:  32.49  1039
+
+2019-06-26 03:48:11,612 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:48:11,612 - log\train.log - INFO -             SIGNS: precision:  30.36%; recall:  34.84%; FB1:  32.44  1222
+
+2019-06-26 03:48:11,612 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  71
+
+2019-06-26 03:48:11,744 - log\train.log - INFO - new best dev f1 score:36.700
+2019-06-26 03:48:14,393 - log\train.log - INFO - model saved
+2019-06-26 03:48:14,393 - log\train.log - INFO - evaluate:test
+2019-06-26 03:48:22,852 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10311 phrases; correct: 3291.
+
+2019-06-26 03:48:22,852 - log\train.log - INFO - accuracy:  81.50%; precision:  31.92%; recall:  36.68%; FB1:  34.13
+
+2019-06-26 03:48:22,852 - log\train.log - INFO -              BODY: precision:  40.99%; recall:  45.68%; FB1:  43.21  3938
+
+2019-06-26 03:48:22,853 - log\train.log - INFO -             CHECK: precision:  25.41%; recall:  24.83%; FB1:  25.12  2873
+
+2019-06-26 03:48:22,853 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:48:22,853 - log\train.log - INFO -             SIGNS: precision:  27.70%; recall:  39.12%; FB1:  32.43  3419
+
+2019-06-26 03:48:22,853 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  81
+
+2019-06-26 03:48:22,969 - log\train.log - INFO - new best test f1 score:34.130
+2019-06-26 03:51:44,868 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:51:48,975 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3558 phrases; correct: 1266.
+
+2019-06-26 03:51:48,975 - log\train.log - INFO - accuracy:  88.09%; precision:  35.58%; recall:  42.86%; FB1:  38.88
+
+2019-06-26 03:51:48,975 - log\train.log - INFO -              BODY: precision:  48.05%; recall:  56.94%; FB1:  52.12  1230
+
+2019-06-26 03:51:48,975 - log\train.log - INFO -             CHECK: precision:  25.89%; recall:  34.49%; FB1:  29.58  1035
+
+2019-06-26 03:51:48,975 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:51:48,975 - log\train.log - INFO -             SIGNS: precision:  33.47%; recall:  38.22%; FB1:  35.69  1216
+
+2019-06-26 03:51:48,975 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  77
+
+2019-06-26 03:51:49,092 - log\train.log - INFO - new best dev f1 score:38.880
+2019-06-26 03:51:51,848 - log\train.log - INFO - model saved
+2019-06-26 03:51:51,849 - log\train.log - INFO - evaluate:test
+2019-06-26 03:52:00,344 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10196 phrases; correct: 3440.
+
+2019-06-26 03:52:00,344 - log\train.log - INFO - accuracy:  81.87%; precision:  33.74%; recall:  38.34%; FB1:  35.89
+
+2019-06-26 03:52:00,344 - log\train.log - INFO -              BODY: precision:  44.15%; recall:  47.95%; FB1:  45.97  3837
+
+2019-06-26 03:52:00,345 - log\train.log - INFO -             CHECK: precision:  24.97%; recall:  24.63%; FB1:  24.80  2899
+
+2019-06-26 03:52:00,345 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:52:00,345 - log\train.log - INFO -             SIGNS: precision:  30.25%; recall:  42.21%; FB1:  35.24  3379
+
+2019-06-26 03:52:00,345 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  81
+
+2019-06-26 03:52:00,457 - log\train.log - INFO - new best test f1 score:35.890
+2019-06-26 03:55:24,669 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:55:28,944 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3544 phrases; correct: 1326.
+
+2019-06-26 03:55:28,944 - log\train.log - INFO - accuracy:  88.35%; precision:  37.42%; recall:  44.89%; FB1:  40.81
+
+2019-06-26 03:55:28,944 - log\train.log - INFO -              BODY: precision:  49.83%; recall:  57.71%; FB1:  53.48  1202
+
+2019-06-26 03:55:28,945 - log\train.log - INFO -             CHECK: precision:  28.61%; recall:  38.22%; FB1:  32.73  1038
+
+2019-06-26 03:55:28,945 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:55:28,945 - log\train.log - INFO -             SIGNS: precision:  35.30%; recall:  40.38%; FB1:  37.67  1218
+
+2019-06-26 03:55:28,945 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  86
+
+2019-06-26 03:55:29,082 - log\train.log - INFO - new best dev f1 score:40.810
+2019-06-26 03:55:31,675 - log\train.log - INFO - model saved
+2019-06-26 03:55:31,676 - log\train.log - INFO - evaluate:test
+2019-06-26 03:55:40,090 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10160 phrases; correct: 3582.
+
+2019-06-26 03:55:40,090 - log\train.log - INFO - accuracy:  82.39%; precision:  35.26%; recall:  39.92%; FB1:  37.45
+
+2019-06-26 03:55:40,090 - log\train.log - INFO -              BODY: precision:  45.60%; recall:  48.83%; FB1:  47.16  3783
+
+2019-06-26 03:55:40,090 - log\train.log - INFO -             CHECK: precision:  27.16%; recall:  27.28%; FB1:  27.22  2953
+
+2019-06-26 03:55:40,090 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:55:40,091 - log\train.log - INFO -             SIGNS: precision:  31.55%; recall:  43.58%; FB1:  36.60  3344
+
+2019-06-26 03:55:40,091 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  80
+
+2019-06-26 03:55:40,212 - log\train.log - INFO - new best test f1 score:37.450
+2019-06-26 03:59:04,439 - log\train.log - INFO - evaluate:dev
+2019-06-26 03:59:08,661 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3654 phrases; correct: 1337.
+
+2019-06-26 03:59:08,661 - log\train.log - INFO - accuracy:  88.35%; precision:  36.59%; recall:  45.26%; FB1:  40.47
+
+2019-06-26 03:59:08,661 - log\train.log - INFO -              BODY: precision:  49.67%; recall:  58.38%; FB1:  53.68  1220
+
+2019-06-26 03:59:08,661 - log\train.log - INFO -             CHECK: precision:  25.45%; recall:  36.55%; FB1:  30.01  1116
+
+2019-06-26 03:59:08,661 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:59:08,661 - log\train.log - INFO -             SIGNS: precision:  36.34%; recall:  41.97%; FB1:  38.95  1230
+
+2019-06-26 03:59:08,661 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  88
+
+2019-06-26 03:59:08,662 - log\train.log - INFO - evaluate:test
+2019-06-26 03:59:17,032 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10375 phrases; correct: 3822.
+
+2019-06-26 03:59:17,032 - log\train.log - INFO - accuracy:  83.02%; precision:  36.84%; recall:  42.60%; FB1:  39.51
+
+2019-06-26 03:59:17,032 - log\train.log - INFO -              BODY: precision:  46.44%; recall:  50.07%; FB1:  48.19  3809
+
+2019-06-26 03:59:17,032 - log\train.log - INFO -             CHECK: precision:  29.47%; recall:  31.19%; FB1:  30.30  3112
+
+2019-06-26 03:59:17,033 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 03:59:17,033 - log\train.log - INFO -             SIGNS: precision:  33.67%; recall:  46.92%; FB1:  39.21  3374
+
+2019-06-26 03:59:17,033 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  80
+
+2019-06-26 03:59:17,152 - log\train.log - INFO - new best test f1 score:39.510
+2019-06-26 04:02:40,389 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:02:44,630 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3739 phrases; correct: 1393.
+
+2019-06-26 04:02:44,630 - log\train.log - INFO - accuracy:  88.60%; precision:  37.26%; recall:  47.16%; FB1:  41.63
+
+2019-06-26 04:02:44,631 - log\train.log - INFO -              BODY: precision:  48.35%; recall:  59.25%; FB1:  53.25  1272
+
+2019-06-26 04:02:44,631 - log\train.log - INFO -             CHECK: precision:  28.57%; recall:  40.93%; FB1:  33.65  1113
+
+2019-06-26 04:02:44,631 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:02:44,631 - log\train.log - INFO -             SIGNS: precision:  36.45%; recall:  43.19%; FB1:  39.54  1262
+
+2019-06-26 04:02:44,631 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  92
+
+2019-06-26 04:02:44,749 - log\train.log - INFO - new best dev f1 score:41.630
+2019-06-26 04:02:47,445 - log\train.log - INFO - model saved
+2019-06-26 04:02:47,446 - log\train.log - INFO - evaluate:test
+2019-06-26 04:02:55,803 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10578 phrases; correct: 4099.
+
+2019-06-26 04:02:55,803 - log\train.log - INFO - accuracy:  83.81%; precision:  38.75%; recall:  45.69%; FB1:  41.93
+
+2019-06-26 04:02:55,803 - log\train.log - INFO -              BODY: precision:  46.82%; recall:  51.49%; FB1:  49.04  3885
+
+2019-06-26 04:02:55,803 - log\train.log - INFO -             CHECK: precision:  34.66%; recall:  37.01%; FB1:  35.80  3139
+
+2019-06-26 04:02:55,803 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:02:55,803 - log\train.log - INFO -             SIGNS: precision:  34.32%; recall:  49.24%; FB1:  40.45  3473
+
+2019-06-26 04:02:55,804 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  81
+
+2019-06-26 04:02:55,916 - log\train.log - INFO - new best test f1 score:41.930
+2019-06-26 04:06:21,771 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:06:26,106 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3796 phrases; correct: 1479.
+
+2019-06-26 04:06:26,106 - log\train.log - INFO - accuracy:  88.64%; precision:  38.96%; recall:  50.07%; FB1:  43.82
+
+2019-06-26 04:06:26,107 - log\train.log - INFO -              BODY: precision:  48.04%; recall:  60.12%; FB1:  53.40  1299
+
+2019-06-26 04:06:26,107 - log\train.log - INFO -             CHECK: precision:  32.04%; recall:  46.72%; FB1:  38.01  1133
+
+2019-06-26 04:06:26,107 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:06:26,107 - log\train.log - INFO -             SIGNS: precision:  38.74%; recall:  46.20%; FB1:  42.14  1270
+
+2019-06-26 04:06:26,107 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  94
+
+2019-06-26 04:06:26,241 - log\train.log - INFO - new best dev f1 score:43.820
+2019-06-26 04:06:28,991 - log\train.log - INFO - model saved
+2019-06-26 04:06:28,991 - log\train.log - INFO - evaluate:test
+2019-06-26 04:06:37,489 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10678 phrases; correct: 4300.
+
+2019-06-26 04:06:37,489 - log\train.log - INFO - accuracy:  84.25%; precision:  40.27%; recall:  47.93%; FB1:  43.77
+
+2019-06-26 04:06:37,489 - log\train.log - INFO -              BODY: precision:  47.38%; recall:  52.50%; FB1:  49.81  3915
+
+2019-06-26 04:06:37,489 - log\train.log - INFO -             CHECK: precision:  36.98%; recall:  40.00%; FB1:  38.43  3180
+
+2019-06-26 04:06:37,489 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:06:37,489 - log\train.log - INFO -             SIGNS: precision:  36.17%; recall:  52.42%; FB1:  42.81  3508
+
+2019-06-26 04:06:37,489 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  75
+
+2019-06-26 04:06:37,602 - log\train.log - INFO - new best test f1 score:43.770
+2019-06-26 04:10:03,144 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:10:07,504 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3751 phrases; correct: 1467.
+
+2019-06-26 04:10:07,504 - log\train.log - INFO - accuracy:  88.82%; precision:  39.11%; recall:  49.66%; FB1:  43.76
+
+2019-06-26 04:10:07,504 - log\train.log - INFO -              BODY: precision:  49.26%; recall:  60.60%; FB1:  54.34  1277
+
+2019-06-26 04:10:07,504 - log\train.log - INFO -             CHECK: precision:  32.56%; recall:  46.72%; FB1:  38.37  1115
+
+2019-06-26 04:10:07,504 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:10:07,504 - log\train.log - INFO -             SIGNS: precision:  37.52%; recall:  44.60%; FB1:  40.76  1266
+
+2019-06-26 04:10:07,505 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  93
+
+2019-06-26 04:10:07,506 - log\train.log - INFO - evaluate:test
+2019-06-26 04:10:16,189 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10582 phrases; correct: 4355.
+
+2019-06-26 04:10:16,189 - log\train.log - INFO - accuracy:  84.54%; precision:  41.15%; recall:  48.54%; FB1:  44.54
+
+2019-06-26 04:10:16,189 - log\train.log - INFO -              BODY: precision:  48.03%; recall:  52.39%; FB1:  50.12  3854
+
+2019-06-26 04:10:16,189 - log\train.log - INFO -             CHECK: precision:  37.85%; recall:  40.78%; FB1:  39.26  3168
+
+2019-06-26 04:10:16,189 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:10:16,189 - log\train.log - INFO -             SIGNS: precision:  37.47%; recall:  53.90%; FB1:  44.21  3483
+
+2019-06-26 04:10:16,190 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  77
+
+2019-06-26 04:10:16,325 - log\train.log - INFO - new best test f1 score:44.540
+2019-06-26 04:13:44,334 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:13:48,708 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3724 phrases; correct: 1480.
+
+2019-06-26 04:13:48,709 - log\train.log - INFO - accuracy:  89.14%; precision:  39.74%; recall:  50.10%; FB1:  44.32
+
+2019-06-26 04:13:48,709 - log\train.log - INFO -              BODY: precision:  49.92%; recall:  60.60%; FB1:  54.74  1260
+
+2019-06-26 04:13:48,709 - log\train.log - INFO -             CHECK: precision:  32.59%; recall:  46.98%; FB1:  38.48  1120
+
+2019-06-26 04:13:48,709 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:13:48,709 - log\train.log - INFO -             SIGNS: precision:  38.76%; recall:  45.63%; FB1:  41.91  1254
+
+2019-06-26 04:13:48,709 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  90
+
+2019-06-26 04:13:48,836 - log\train.log - INFO - new best dev f1 score:44.320
+2019-06-26 04:13:51,873 - log\train.log - INFO - model saved
+2019-06-26 04:13:51,873 - log\train.log - INFO - evaluate:test
+2019-06-26 04:14:00,603 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10433 phrases; correct: 4386.
+
+2019-06-26 04:14:00,603 - log\train.log - INFO - accuracy:  84.88%; precision:  42.04%; recall:  48.89%; FB1:  45.20
+
+2019-06-26 04:14:00,603 - log\train.log - INFO -              BODY: precision:  48.86%; recall:  51.97%; FB1:  50.36  3758
+
+2019-06-26 04:14:00,603 - log\train.log - INFO -             CHECK: precision:  38.67%; recall:  42.01%; FB1:  40.27  3194
+
+2019-06-26 04:14:00,603 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:14:00,604 - log\train.log - INFO -             SIGNS: precision:  38.65%; recall:  54.32%; FB1:  45.17  3402
+
+2019-06-26 04:14:00,604 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  79
+
+2019-06-26 04:14:00,737 - log\train.log - INFO - new best test f1 score:45.200
+2019-06-26 04:17:32,333 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:17:36,637 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3763 phrases; correct: 1563.
+
+2019-06-26 04:17:36,637 - log\train.log - INFO - accuracy:  89.50%; precision:  41.54%; recall:  52.91%; FB1:  46.54
+
+2019-06-26 04:17:36,638 - log\train.log - INFO -              BODY: precision:  49.80%; recall:  60.79%; FB1:  54.75  1267
+
+2019-06-26 04:17:36,638 - log\train.log - INFO -             CHECK: precision:  35.60%; recall:  52.51%; FB1:  42.43  1146
+
+2019-06-26 04:17:36,638 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:17:36,638 - log\train.log - INFO -             SIGNS: precision:  41.65%; recall:  49.20%; FB1:  45.11  1258
+
+2019-06-26 04:17:36,638 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  92
+
+2019-06-26 04:17:36,783 - log\train.log - INFO - new best dev f1 score:46.540
+2019-06-26 04:17:39,360 - log\train.log - INFO - model saved
+2019-06-26 04:17:39,361 - log\train.log - INFO - evaluate:test
+2019-06-26 04:17:47,750 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10365 phrases; correct: 4679.
+
+2019-06-26 04:17:47,750 - log\train.log - INFO - accuracy:  85.61%; precision:  45.14%; recall:  52.15%; FB1:  48.39
+
+2019-06-26 04:17:47,750 - log\train.log - INFO -              BODY: precision:  50.78%; recall:  53.35%; FB1:  52.04  3712
+
+2019-06-26 04:17:47,750 - log\train.log - INFO -             CHECK: precision:  43.27%; recall:  47.01%; FB1:  45.06  3194
+
+2019-06-26 04:17:47,751 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:17:47,751 - log\train.log - INFO -             SIGNS: precision:  41.75%; recall:  58.32%; FB1:  48.66  3382
+
+2019-06-26 04:17:47,751 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  77
+
+2019-06-26 04:17:47,881 - log\train.log - INFO - new best test f1 score:48.390
+2019-06-26 04:21:17,550 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:21:21,766 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3763 phrases; correct: 1679.
+
+2019-06-26 04:21:21,766 - log\train.log - INFO - accuracy:  89.83%; precision:  44.62%; recall:  56.84%; FB1:  49.99
+
+2019-06-26 04:21:21,766 - log\train.log - INFO -              BODY: precision:  51.67%; recall:  63.97%; FB1:  57.17  1285
+
+2019-06-26 04:21:21,767 - log\train.log - INFO -             CHECK: precision:  41.88%; recall:  60.36%; FB1:  49.45  1120
+
+2019-06-26 04:21:21,767 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:21:21,767 - log\train.log - INFO -             SIGNS: precision:  43.20%; recall:  51.27%; FB1:  46.89  1264
+
+2019-06-26 04:21:21,767 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  94
+
+2019-06-26 04:21:21,886 - log\train.log - INFO - new best dev f1 score:49.990
+2019-06-26 04:21:24,647 - log\train.log - INFO - model saved
+2019-06-26 04:21:24,648 - log\train.log - INFO - evaluate:test
+2019-06-26 04:21:33,125 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10399 phrases; correct: 4975.
+
+2019-06-26 04:21:33,126 - log\train.log - INFO - accuracy:  86.23%; precision:  47.84%; recall:  55.45%; FB1:  51.37
+
+2019-06-26 04:21:33,126 - log\train.log - INFO -              BODY: precision:  52.42%; recall:  55.08%; FB1:  53.72  3712
+
+2019-06-26 04:21:33,126 - log\train.log - INFO -             CHECK: precision:  47.29%; recall:  51.67%; FB1:  49.38  3212
+
+2019-06-26 04:21:33,126 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:21:33,126 - log\train.log - INFO -             SIGNS: precision:  44.44%; recall:  62.37%; FB1:  51.90  3398
+
+2019-06-26 04:21:33,126 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  77
+
+2019-06-26 04:21:33,240 - log\train.log - INFO - new best test f1 score:51.370
+2019-06-26 04:25:00,547 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:25:04,801 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3759 phrases; correct: 1738.
+
+2019-06-26 04:25:04,802 - log\train.log - INFO - accuracy:  90.07%; precision:  46.24%; recall:  58.84%; FB1:  51.78
+
+2019-06-26 04:25:04,802 - log\train.log - INFO -              BODY: precision:  52.50%; recall:  64.64%; FB1:  57.94  1278
+
+2019-06-26 04:25:04,802 - log\train.log - INFO -             CHECK: precision:  45.60%; recall:  66.02%; FB1:  53.94  1125
+
+2019-06-26 04:25:04,802 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:25:04,802 - log\train.log - INFO -             SIGNS: precision:  43.93%; recall:  52.02%; FB1:  47.64  1261
+
+2019-06-26 04:25:04,802 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  95
+
+2019-06-26 04:25:04,917 - log\train.log - INFO - new best dev f1 score:51.780
+2019-06-26 04:25:07,887 - log\train.log - INFO - model saved
+2019-06-26 04:25:07,887 - log\train.log - INFO - evaluate:test
+2019-06-26 04:25:16,364 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10426 phrases; correct: 5165.
+
+2019-06-26 04:25:16,364 - log\train.log - INFO - accuracy:  86.78%; precision:  49.54%; recall:  57.57%; FB1:  53.25
+
+2019-06-26 04:25:16,364 - log\train.log - INFO -              BODY: precision:  52.90%; recall:  55.93%; FB1:  54.38  3735
+
+2019-06-26 04:25:16,364 - log\train.log - INFO -             CHECK: precision:  50.58%; recall:  56.05%; FB1:  53.18  3258
+
+2019-06-26 04:25:16,364 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:25:16,365 - log\train.log - INFO -             SIGNS: precision:  45.95%; recall:  63.65%; FB1:  53.37  3354
+
+2019-06-26 04:25:16,365 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  79
+
+2019-06-26 04:25:16,483 - log\train.log - INFO - new best test f1 score:53.250
+2019-06-26 04:28:44,986 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:28:49,141 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3639 phrases; correct: 1756.
+
+2019-06-26 04:28:49,142 - log\train.log - INFO - accuracy:  90.32%; precision:  48.26%; recall:  59.44%; FB1:  53.27
+
+2019-06-26 04:28:49,142 - log\train.log - INFO -              BODY: precision:  54.55%; recall:  64.64%; FB1:  59.17  1230
+
+2019-06-26 04:28:49,142 - log\train.log - INFO -             CHECK: precision:  46.53%; recall:  66.41%; FB1:  54.72  1109
+
+2019-06-26 04:28:49,142 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:28:49,142 - log\train.log - INFO -             SIGNS: precision:  47.06%; recall:  53.43%; FB1:  50.04  1209
+
+2019-06-26 04:28:49,142 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  91
+
+2019-06-26 04:28:49,258 - log\train.log - INFO - new best dev f1 score:53.270
+2019-06-26 04:28:51,826 - log\train.log - INFO - model saved
+2019-06-26 04:28:51,827 - log\train.log - INFO - evaluate:test
+2019-06-26 04:29:00,453 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10238 phrases; correct: 5199.
+
+2019-06-26 04:29:00,453 - log\train.log - INFO - accuracy:  86.93%; precision:  50.78%; recall:  57.95%; FB1:  54.13
+
+2019-06-26 04:29:00,453 - log\train.log - INFO -              BODY: precision:  53.82%; recall:  55.82%; FB1:  54.80  3664
+
+2019-06-26 04:29:00,453 - log\train.log - INFO -             CHECK: precision:  51.49%; recall:  56.50%; FB1:  53.88  3226
+
+2019-06-26 04:29:00,454 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:29:00,454 - log\train.log - INFO -             SIGNS: precision:  47.88%; recall:  64.68%; FB1:  55.02  3271
+
+2019-06-26 04:29:00,454 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  77
+
+2019-06-26 04:29:00,567 - log\train.log - INFO - new best test f1 score:54.130
+2019-06-26 04:32:30,050 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:32:34,398 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3606 phrases; correct: 1781.
+
+2019-06-26 04:32:34,399 - log\train.log - INFO - accuracy:  90.45%; precision:  49.39%; recall:  60.29%; FB1:  54.30
+
+2019-06-26 04:32:34,399 - log\train.log - INFO -              BODY: precision:  54.98%; recall:  64.93%; FB1:  59.54  1226
+
+2019-06-26 04:32:34,399 - log\train.log - INFO -             CHECK: precision:  46.42%; recall:  66.67%; FB1:  54.73  1116
+
+2019-06-26 04:32:34,399 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:32:34,399 - log\train.log - INFO -             SIGNS: precision:  49.70%; recall:  55.31%; FB1:  52.36  1185
+
+2019-06-26 04:32:34,399 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  79
+
+2019-06-26 04:32:34,518 - log\train.log - INFO - new best dev f1 score:54.300
+2019-06-26 04:32:37,258 - log\train.log - INFO - model saved
+2019-06-26 04:32:37,258 - log\train.log - INFO - evaluate:test
+2019-06-26 04:32:45,740 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10185 phrases; correct: 5251.
+
+2019-06-26 04:32:45,740 - log\train.log - INFO - accuracy:  87.10%; precision:  51.56%; recall:  58.53%; FB1:  54.82
+
+2019-06-26 04:32:45,740 - log\train.log - INFO -              BODY: precision:  54.01%; recall:  55.87%; FB1:  54.92  3655
+
+2019-06-26 04:32:45,740 - log\train.log - INFO -             CHECK: precision:  51.91%; recall:  57.24%; FB1:  54.45  3242
+
+2019-06-26 04:32:45,740 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 04:32:45,740 - log\train.log - INFO -             SIGNS: precision:  49.56%; recall:  65.84%; FB1:  56.55  3216
+
+2019-06-26 04:32:45,740 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  71
+
+2019-06-26 04:32:45,857 - log\train.log - INFO - new best test f1 score:54.820
+2019-06-26 04:36:18,046 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:36:22,282 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3720 phrases; correct: 1815.
+
+2019-06-26 04:36:22,282 - log\train.log - INFO - accuracy:  90.53%; precision:  48.79%; recall:  61.44%; FB1:  54.39
+
+2019-06-26 04:36:22,283 - log\train.log - INFO -              BODY: precision:  51.43%; recall:  65.70%; FB1:  57.70  1326
+
+2019-06-26 04:36:22,283 - log\train.log - INFO -             CHECK: precision:  46.31%; recall:  67.82%; FB1:  55.04  1138
+
+2019-06-26 04:36:22,283 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:36:22,283 - log\train.log - INFO -             SIGNS: precision:  51.01%; recall:  56.90%; FB1:  53.79  1188
+
+2019-06-26 04:36:22,283 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  68
+
+2019-06-26 04:36:22,401 - log\train.log - INFO - new best dev f1 score:54.390
+2019-06-26 04:36:24,996 - log\train.log - INFO - model saved
+2019-06-26 04:36:24,996 - log\train.log - INFO - evaluate:test
+2019-06-26 04:36:33,363 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10282 phrases; correct: 5425.
+
+2019-06-26 04:36:33,363 - log\train.log - INFO - accuracy:  87.60%; precision:  52.76%; recall:  60.47%; FB1:  56.35
+
+2019-06-26 04:36:33,364 - log\train.log - INFO -              BODY: precision:  54.23%; recall:  57.46%; FB1:  55.80  3743
+
+2019-06-26 04:36:33,364 - log\train.log - INFO -             CHECK: precision:  53.28%; recall:  59.35%; FB1:  56.15  3275
+
+2019-06-26 04:36:33,364 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  4
+
+2019-06-26 04:36:33,364 - log\train.log - INFO -             SIGNS: precision:  51.61%; recall:  68.15%; FB1:  58.74  3197
+
+2019-06-26 04:36:33,364 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  63
+
+2019-06-26 04:36:33,478 - log\train.log - INFO - new best test f1 score:56.350
+2019-06-26 04:40:06,278 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:40:10,805 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3746 phrases; correct: 1849.
+
+2019-06-26 04:40:10,806 - log\train.log - INFO - accuracy:  90.77%; precision:  49.36%; recall:  62.59%; FB1:  55.19
+
+2019-06-26 04:40:10,806 - log\train.log - INFO -              BODY: precision:  50.93%; recall:  65.80%; FB1:  57.42  1341
+
+2019-06-26 04:40:10,806 - log\train.log - INFO -             CHECK: precision:  47.39%; recall:  70.01%; FB1:  56.52  1148
+
+2019-06-26 04:40:10,806 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2019-06-26 04:40:10,806 - log\train.log - INFO -             SIGNS: precision:  52.09%; recall:  58.40%; FB1:  55.07  1194
+
+2019-06-26 04:40:10,806 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  63
+
+2019-06-26 04:40:10,924 - log\train.log - INFO - new best dev f1 score:55.190
+2019-06-26 04:40:13,592 - log\train.log - INFO - model saved
+2019-06-26 04:40:13,592 - log\train.log - INFO - evaluate:test
+2019-06-26 04:40:22,075 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10333 phrases; correct: 5582.
+
+2019-06-26 04:40:22,076 - log\train.log - INFO - accuracy:  88.11%; precision:  54.02%; recall:  62.22%; FB1:  57.83
+
+2019-06-26 04:40:22,076 - log\train.log - INFO -              BODY: precision:  55.61%; recall:  59.02%; FB1:  57.26  3749
+
+2019-06-26 04:40:22,076 - log\train.log - INFO -             CHECK: precision:  54.48%; recall:  61.46%; FB1:  57.76  3317
+
+2019-06-26 04:40:22,076 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  5
+
+2019-06-26 04:40:22,076 - log\train.log - INFO -             SIGNS: precision:  52.78%; recall:  69.81%; FB1:  60.11  3202
+
+2019-06-26 04:40:22,076 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  60
+
+2019-06-26 04:40:22,193 - log\train.log - INFO - new best test f1 score:57.830
+2019-06-26 04:43:56,301 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:44:00,595 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3705 phrases; correct: 1884.
+
+2019-06-26 04:44:00,595 - log\train.log - INFO - accuracy:  90.99%; precision:  50.85%; recall:  63.78%; FB1:  56.59
+
+2019-06-26 04:44:00,596 - log\train.log - INFO -              BODY: precision:  52.88%; recall:  66.38%; FB1:  58.86  1303
+
+2019-06-26 04:44:00,596 - log\train.log - INFO -             CHECK: precision:  48.28%; recall:  70.66%; FB1:  57.37  1137
+
+2019-06-26 04:44:00,596 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+
+2019-06-26 04:44:00,596 - log\train.log - INFO -             SIGNS: precision:  54.10%; recall:  60.66%; FB1:  57.19  1194
+
+2019-06-26 04:44:00,596 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  70
+
+2019-06-26 04:44:00,745 - log\train.log - INFO - new best dev f1 score:56.590
+2019-06-26 04:44:03,743 - log\train.log - INFO - model saved
+2019-06-26 04:44:03,744 - log\train.log - INFO - evaluate:test
+2019-06-26 04:44:12,429 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10274 phrases; correct: 5662.
+
+2019-06-26 04:44:12,429 - log\train.log - INFO - accuracy:  88.35%; precision:  55.11%; recall:  63.11%; FB1:  58.84
+
+2019-06-26 04:44:12,429 - log\train.log - INFO -              BODY: precision:  56.71%; recall:  59.55%; FB1:  58.10  3710
+
+2019-06-26 04:44:12,429 - log\train.log - INFO -             CHECK: precision:  55.48%; recall:  62.72%; FB1:  58.88  3324
+
+2019-06-26 04:44:12,429 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  5
+
+2019-06-26 04:44:12,429 - log\train.log - INFO -             SIGNS: precision:  54.04%; recall:  70.80%; FB1:  61.29  3172
+
+2019-06-26 04:44:12,429 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  63
+
+2019-06-26 04:44:12,557 - log\train.log - INFO - new best test f1 score:58.840
+2019-06-26 04:47:48,807 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:47:53,030 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3632 phrases; correct: 1907.
+
+2019-06-26 04:47:53,030 - log\train.log - INFO - accuracy:  91.23%; precision:  52.51%; recall:  64.56%; FB1:  57.91
+
+2019-06-26 04:47:53,030 - log\train.log - INFO -              BODY: precision:  54.78%; recall:  66.86%; FB1:  60.22  1267
+
+2019-06-26 04:47:53,030 - log\train.log - INFO -             CHECK: precision:  49.73%; recall:  71.43%; FB1:  58.64  1116
+
+2019-06-26 04:47:53,030 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  2
+
+2019-06-26 04:47:53,031 - log\train.log - INFO -             SIGNS: precision:  55.81%; recall:  61.78%; FB1:  58.65  1179
+
+2019-06-26 04:47:53,031 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  68
+
+2019-06-26 04:47:53,155 - log\train.log - INFO - new best dev f1 score:57.910
+2019-06-26 04:47:56,045 - log\train.log - INFO - model saved
+2019-06-26 04:47:56,045 - log\train.log - INFO - evaluate:test
+2019-06-26 04:48:04,754 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10183 phrases; correct: 5720.
+
+2019-06-26 04:48:04,754 - log\train.log - INFO - accuracy:  88.58%; precision:  56.17%; recall:  63.75%; FB1:  59.72
+
+2019-06-26 04:48:04,754 - log\train.log - INFO -              BODY: precision:  57.54%; recall:  59.84%; FB1:  58.67  3674
+
+2019-06-26 04:48:04,754 - log\train.log - INFO -             CHECK: precision:  56.42%; recall:  63.95%; FB1:  59.95  3332
+
+2019-06-26 04:48:04,755 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  5
+
+2019-06-26 04:48:04,755 - log\train.log - INFO -             SIGNS: precision:  55.55%; recall:  71.29%; FB1:  62.45  3107
+
+2019-06-26 04:48:04,755 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  65
+
+2019-06-26 04:48:04,880 - log\train.log - INFO - new best test f1 score:59.720
+2019-06-26 04:51:42,961 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:51:47,268 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3618 phrases; correct: 1953.
+
+2019-06-26 04:51:47,269 - log\train.log - INFO - accuracy:  91.38%; precision:  53.98%; recall:  66.11%; FB1:  59.43
+
+2019-06-26 04:51:47,269 - log\train.log - INFO -              BODY: precision:  57.11%; recall:  69.27%; FB1:  62.60  1259
+
+2019-06-26 04:51:47,269 - log\train.log - INFO -             CHECK: precision:  50.18%; recall:  73.36%; FB1:  59.59  1136
+
+2019-06-26 04:51:47,269 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  4
+
+2019-06-26 04:51:47,269 - log\train.log - INFO -             SIGNS: precision:  57.29%; recall:  62.35%; FB1:  59.71  1159
+
+2019-06-26 04:51:47,269 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  60
+
+2019-06-26 04:51:47,394 - log\train.log - INFO - new best dev f1 score:59.430
+2019-06-26 04:51:50,354 - log\train.log - INFO - model saved
+2019-06-26 04:51:50,355 - log\train.log - INFO - evaluate:test
+2019-06-26 04:51:58,952 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10115 phrases; correct: 5893.
+
+2019-06-26 04:51:58,953 - log\train.log - INFO - accuracy:  89.03%; precision:  58.26%; recall:  65.68%; FB1:  61.75
+
+2019-06-26 04:51:58,953 - log\train.log - INFO -              BODY: precision:  59.90%; recall:  61.90%; FB1:  60.89  3651
+
+2019-06-26 04:51:58,953 - log\train.log - INFO -             CHECK: precision:  58.39%; recall:  66.90%; FB1:  62.36  3369
+
+2019-06-26 04:51:58,953 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  6
+
+2019-06-26 04:51:58,953 - log\train.log - INFO -             SIGNS: precision:  57.41%; recall:  71.83%; FB1:  63.82  3029
+
+2019-06-26 04:51:58,953 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  60
+
+2019-06-26 04:51:59,072 - log\train.log - INFO - new best test f1 score:61.750
+2019-06-26 04:55:35,551 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:55:39,803 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3608 phrases; correct: 2007.
+
+2019-06-26 04:55:39,803 - log\train.log - INFO - accuracy:  91.45%; precision:  55.63%; recall:  67.94%; FB1:  61.17
+
+2019-06-26 04:55:39,803 - log\train.log - INFO -              BODY: precision:  61.95%; recall:  72.93%; FB1:  66.99  1222
+
+2019-06-26 04:55:39,803 - log\train.log - INFO -             CHECK: precision:  49.32%; recall:  74.39%; FB1:  59.31  1172
+
+2019-06-26 04:55:39,803 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  4
+
+2019-06-26 04:55:39,804 - log\train.log - INFO -             SIGNS: precision:  58.18%; recall:  63.10%; FB1:  60.54  1155
+
+2019-06-26 04:55:39,804 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  55
+
+2019-06-26 04:55:39,938 - log\train.log - INFO - new best dev f1 score:61.170
+2019-06-26 04:55:42,656 - log\train.log - INFO - model saved
+2019-06-26 04:55:42,656 - log\train.log - INFO - evaluate:test
+2019-06-26 04:55:51,151 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 10028 phrases; correct: 6034.
+
+2019-06-26 04:55:51,152 - log\train.log - INFO - accuracy:  89.32%; precision:  60.17%; recall:  67.25%; FB1:  63.52
+
+2019-06-26 04:55:51,152 - log\train.log - INFO -              BODY: precision:  63.38%; recall:  64.08%; FB1:  63.73  3572
+
+2019-06-26 04:55:51,152 - log\train.log - INFO -             CHECK: precision:  59.05%; recall:  68.71%; FB1:  63.51  3421
+
+2019-06-26 04:55:51,152 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  8
+
+2019-06-26 04:55:51,152 - log\train.log - INFO -             SIGNS: precision:  58.90%; recall:  72.28%; FB1:  64.91  2971
+
+2019-06-26 04:55:51,152 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  56
+
+2019-06-26 04:55:51,268 - log\train.log - INFO - new best test f1 score:63.520
+2019-06-26 04:59:26,968 - log\train.log - INFO - evaluate:dev
+2019-06-26 04:59:31,505 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3524 phrases; correct: 2029.
+
+2019-06-26 04:59:31,505 - log\train.log - INFO - accuracy:  91.67%; precision:  57.58%; recall:  68.69%; FB1:  62.64
+
+2019-06-26 04:59:31,505 - log\train.log - INFO -              BODY: precision:  63.30%; recall:  72.45%; FB1:  67.57  1188
+
+2019-06-26 04:59:31,505 - log\train.log - INFO -             CHECK: precision:  52.53%; recall:  74.90%; FB1:  61.75  1108
+
+2019-06-26 04:59:31,505 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  9
+
+2019-06-26 04:59:31,505 - log\train.log - INFO -             SIGNS: precision:  60.28%; recall:  65.26%; FB1:  62.67  1153
+
+2019-06-26 04:59:31,505 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  66
+
+2019-06-26 04:59:31,634 - log\train.log - INFO - new best dev f1 score:62.640
+2019-06-26 04:59:34,442 - log\train.log - INFO - model saved
+2019-06-26 04:59:34,442 - log\train.log - INFO - evaluate:test
+2019-06-26 04:59:43,047 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9905 phrases; correct: 6104.
+
+2019-06-26 04:59:43,047 - log\train.log - INFO - accuracy:  89.64%; precision:  61.63%; recall:  68.03%; FB1:  64.67
+
+2019-06-26 04:59:43,047 - log\train.log - INFO -              BODY: precision:  65.21%; recall:  64.56%; FB1:  64.88  3498
+
+2019-06-26 04:59:43,047 - log\train.log - INFO -             CHECK: precision:  60.83%; recall:  70.03%; FB1:  65.11  3385
+
+2019-06-26 04:59:43,047 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  11
+
+2019-06-26 04:59:43,047 - log\train.log - INFO -             SIGNS: precision:  59.69%; recall:  72.78%; FB1:  65.59  2952
+
+2019-06-26 04:59:43,047 - log\train.log - INFO -         TREATMENT: precision:   3.39%; recall:  10.00%; FB1:   5.06  59
+
+2019-06-26 04:59:43,164 - log\train.log - INFO - new best test f1 score:64.670
+2019-06-26 05:03:20,973 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:03:25,089 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3491 phrases; correct: 2067.
+
+2019-06-26 05:03:25,089 - log\train.log - INFO - accuracy:  91.99%; precision:  59.21%; recall:  69.97%; FB1:  64.14
+
+2019-06-26 05:03:25,089 - log\train.log - INFO -              BODY: precision:  64.38%; recall:  72.45%; FB1:  68.18  1168
+
+2019-06-26 05:03:25,089 - log\train.log - INFO -             CHECK: precision:  54.07%; recall:  75.16%; FB1:  62.90  1080
+
+2019-06-26 05:03:25,090 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  13
+
+2019-06-26 05:03:25,090 - log\train.log - INFO -             SIGNS: precision:  63.40%; recall:  68.64%; FB1:  65.92  1153
+
+2019-06-26 05:03:25,090 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  77
+
+2019-06-26 05:03:25,208 - log\train.log - INFO - new best dev f1 score:64.140
+2019-06-26 05:03:28,184 - log\train.log - INFO - model saved
+2019-06-26 05:03:28,184 - log\train.log - INFO - evaluate:test
+2019-06-26 05:03:36,677 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9858 phrases; correct: 6176.
+
+2019-06-26 05:03:36,677 - log\train.log - INFO - accuracy:  90.01%; precision:  62.65%; recall:  68.84%; FB1:  65.60
+
+2019-06-26 05:03:36,677 - log\train.log - INFO -              BODY: precision:  65.57%; recall:  64.68%; FB1:  65.12  3485
+
+2019-06-26 05:03:36,677 - log\train.log - INFO -             CHECK: precision:  62.08%; recall:  70.34%; FB1:  65.95  3331
+
+2019-06-26 05:03:36,677 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  13
+
+2019-06-26 05:03:36,677 - log\train.log - INFO -             SIGNS: precision:  61.27%; recall:  75.22%; FB1:  67.53  2972
+
+2019-06-26 05:03:36,678 - log\train.log - INFO -         TREATMENT: precision:   3.51%; recall:  10.00%; FB1:   5.19  57
+
+2019-06-26 05:03:36,796 - log\train.log - INFO - new best test f1 score:65.600
+2019-06-26 05:07:14,547 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:07:18,880 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3482 phrases; correct: 2101.
+
+2019-06-26 05:07:18,880 - log\train.log - INFO - accuracy:  92.16%; precision:  60.34%; recall:  71.12%; FB1:  65.29
+
+2019-06-26 05:07:18,881 - log\train.log - INFO -              BODY: precision:  64.19%; recall:  72.35%; FB1:  68.03  1170
+
+2019-06-26 05:07:18,881 - log\train.log - INFO -             CHECK: precision:  54.73%; recall:  75.16%; FB1:  63.34  1067
+
+2019-06-26 05:07:18,881 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  13
+
+2019-06-26 05:07:18,881 - log\train.log - INFO -             SIGNS: precision:  66.09%; recall:  71.92%; FB1:  68.88  1159
+
+2019-06-26 05:07:18,881 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  73
+
+2019-06-26 05:07:18,999 - log\train.log - INFO - new best dev f1 score:65.290
+2019-06-26 05:07:21,585 - log\train.log - INFO - model saved
+2019-06-26 05:07:21,585 - log\train.log - INFO - evaluate:test
+2019-06-26 05:07:30,026 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9807 phrases; correct: 6256.
+
+2019-06-26 05:07:30,026 - log\train.log - INFO - accuracy:  90.30%; precision:  63.79%; recall:  69.73%; FB1:  66.63
+
+2019-06-26 05:07:30,026 - log\train.log - INFO -              BODY: precision:  66.10%; recall:  65.24%; FB1:  65.67  3487
+
+2019-06-26 05:07:30,026 - log\train.log - INFO -             CHECK: precision:  63.39%; recall:  70.85%; FB1:  66.91  3286
+
+2019-06-26 05:07:30,026 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  14
+
+2019-06-26 05:07:30,027 - log\train.log - INFO -             SIGNS: precision:  62.93%; recall:  77.08%; FB1:  69.29  2965
+
+2019-06-26 05:07:30,027 - log\train.log - INFO -         TREATMENT: precision:   3.64%; recall:  10.00%; FB1:   5.33  55
+
+2019-06-26 05:07:30,146 - log\train.log - INFO - new best test f1 score:66.630
+2019-06-26 05:11:07,761 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:11:11,969 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3486 phrases; correct: 2104.
+
+2019-06-26 05:11:11,969 - log\train.log - INFO - accuracy:  92.16%; precision:  60.36%; recall:  71.23%; FB1:  65.34
+
+2019-06-26 05:11:11,969 - log\train.log - INFO -              BODY: precision:  63.75%; recall:  71.00%; FB1:  67.18  1156
+
+2019-06-26 05:11:11,970 - log\train.log - INFO -             CHECK: precision:  54.27%; recall:  76.06%; FB1:  63.34  1089
+
+2019-06-26 05:11:11,970 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  18
+
+2019-06-26 05:11:11,970 - log\train.log - INFO -             SIGNS: precision:  67.65%; recall:  72.86%; FB1:  70.16  1147
+
+2019-06-26 05:11:11,970 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  76
+
+2019-06-26 05:11:12,095 - log\train.log - INFO - new best dev f1 score:65.340
+2019-06-26 05:11:14,878 - log\train.log - INFO - model saved
+2019-06-26 05:11:14,878 - log\train.log - INFO - evaluate:test
+2019-06-26 05:11:23,404 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9807 phrases; correct: 6377.
+
+2019-06-26 05:11:23,404 - log\train.log - INFO - accuracy:  90.61%; precision:  65.02%; recall:  71.08%; FB1:  67.92
+
+2019-06-26 05:11:23,404 - log\train.log - INFO -              BODY: precision:  67.08%; recall:  66.15%; FB1:  66.61  3484
+
+2019-06-26 05:11:23,404 - log\train.log - INFO -             CHECK: precision:  64.31%; recall:  73.13%; FB1:  68.44  3343
+
+2019-06-26 05:11:23,404 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  18
+
+2019-06-26 05:11:23,404 - log\train.log - INFO -             SIGNS: precision:  64.90%; recall:  77.98%; FB1:  70.84  2909
+
+2019-06-26 05:11:23,404 - log\train.log - INFO -         TREATMENT: precision:   3.77%; recall:  10.00%; FB1:   5.48  53
+
+2019-06-26 05:11:23,520 - log\train.log - INFO - new best test f1 score:67.920
+2019-06-26 05:15:03,647 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:15:07,867 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3474 phrases; correct: 2109.
+
+2019-06-26 05:15:07,867 - log\train.log - INFO - accuracy:  92.29%; precision:  60.71%; recall:  71.39%; FB1:  65.62
+
+2019-06-26 05:15:07,867 - log\train.log - INFO -              BODY: precision:  63.99%; recall:  69.85%; FB1:  66.79  1133
+
+2019-06-26 05:15:07,867 - log\train.log - INFO -             CHECK: precision:  54.52%; recall:  76.83%; FB1:  63.78  1095
+
+2019-06-26 05:15:07,867 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  29
+
+2019-06-26 05:15:07,867 - log\train.log - INFO -             SIGNS: precision:  69.46%; recall:  73.90%; FB1:  71.61  1133
+
+2019-06-26 05:15:07,867 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  84
+
+2019-06-26 05:15:07,997 - log\train.log - INFO - new best dev f1 score:65.620
+2019-06-26 05:15:10,622 - log\train.log - INFO - model saved
+2019-06-26 05:15:10,622 - log\train.log - INFO - evaluate:test
+2019-06-26 05:15:19,046 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9712 phrases; correct: 6403.
+
+2019-06-26 05:15:19,046 - log\train.log - INFO - accuracy:  90.79%; precision:  65.93%; recall:  71.37%; FB1:  68.54
+
+2019-06-26 05:15:19,046 - log\train.log - INFO -              BODY: precision:  67.40%; recall:  65.78%; FB1:  66.58  3448
+
+2019-06-26 05:15:19,046 - log\train.log - INFO -             CHECK: precision:  65.31%; recall:  74.01%; FB1:  69.39  3332
+
+2019-06-26 05:15:19,047 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  18
+
+2019-06-26 05:15:19,047 - log\train.log - INFO -             SIGNS: precision:  66.45%; recall:  78.52%; FB1:  71.98  2861
+
+2019-06-26 05:15:19,047 - log\train.log - INFO -         TREATMENT: precision:   3.77%; recall:  10.00%; FB1:   5.48  53
+
+2019-06-26 05:15:19,166 - log\train.log - INFO - new best test f1 score:68.540
+2019-06-26 05:18:57,775 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:19:02,001 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3459 phrases; correct: 2139.
+
+2019-06-26 05:19:02,001 - log\train.log - INFO - accuracy:  92.46%; precision:  61.84%; recall:  72.41%; FB1:  66.71
+
+2019-06-26 05:19:02,001 - log\train.log - INFO -              BODY: precision:  66.06%; recall:  70.33%; FB1:  68.13  1105
+
+2019-06-26 05:19:02,001 - log\train.log - INFO -             CHECK: precision:  54.61%; recall:  76.96%; FB1:  63.89  1095
+
+2019-06-26 05:19:02,001 - log\train.log - INFO -           DISEASE: precision:   2.56%; recall:   1.35%; FB1:   1.77  39
+
+2019-06-26 05:19:02,001 - log\train.log - INFO -             SIGNS: precision:  71.87%; recall:  76.06%; FB1:  73.91  1127
+
+2019-06-26 05:19:02,001 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  93
+
+2019-06-26 05:19:02,137 - log\train.log - INFO - new best dev f1 score:66.710
+2019-06-26 05:19:04,926 - log\train.log - INFO - model saved
+2019-06-26 05:19:04,926 - log\train.log - INFO - evaluate:test
+2019-06-26 05:19:13,456 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9716 phrases; correct: 6474.
+
+2019-06-26 05:19:13,456 - log\train.log - INFO - accuracy:  91.03%; precision:  66.63%; recall:  72.16%; FB1:  69.29
+
+2019-06-26 05:19:13,456 - log\train.log - INFO -              BODY: precision:  67.71%; recall:  66.23%; FB1:  66.96  3456
+
+2019-06-26 05:19:13,456 - log\train.log - INFO -             CHECK: precision:  66.14%; recall:  74.93%; FB1:  70.26  3331
+
+2019-06-26 05:19:13,457 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  20
+
+2019-06-26 05:19:13,457 - log\train.log - INFO -             SIGNS: precision:  67.54%; recall:  79.68%; FB1:  73.11  2856
+
+2019-06-26 05:19:13,457 - log\train.log - INFO -         TREATMENT: precision:   3.77%; recall:  10.00%; FB1:   5.48  53
+
+2019-06-26 05:19:13,574 - log\train.log - INFO - new best test f1 score:69.290
+2019-06-26 05:22:55,324 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:22:59,618 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3461 phrases; correct: 2162.
+
+2019-06-26 05:22:59,618 - log\train.log - INFO - accuracy:  92.54%; precision:  62.47%; recall:  73.19%; FB1:  67.40
+
+2019-06-26 05:22:59,618 - log\train.log - INFO -              BODY: precision:  66.16%; recall:  70.62%; FB1:  68.31  1108
+
+2019-06-26 05:22:59,618 - log\train.log - INFO -             CHECK: precision:  55.06%; recall:  76.96%; FB1:  64.20  1086
+
+2019-06-26 05:22:59,618 - log\train.log - INFO -           DISEASE: precision:   2.44%; recall:   1.35%; FB1:   1.74  41
+
+2019-06-26 05:22:59,618 - log\train.log - INFO -             SIGNS: precision:  73.32%; recall:  77.93%; FB1:  75.56  1132
+
+2019-06-26 05:22:59,618 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  94
+
+2019-06-26 05:22:59,738 - log\train.log - INFO - new best dev f1 score:67.400
+2019-06-26 05:23:02,506 - log\train.log - INFO - model saved
+2019-06-26 05:23:02,506 - log\train.log - INFO - evaluate:test
+2019-06-26 05:23:10,864 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9731 phrases; correct: 6575.
+
+2019-06-26 05:23:10,864 - log\train.log - INFO - accuracy:  91.34%; precision:  67.57%; recall:  73.28%; FB1:  70.31
+
+2019-06-26 05:23:10,864 - log\train.log - INFO -              BODY: precision:  68.84%; recall:  67.65%; FB1:  68.24  3472
+
+2019-06-26 05:23:10,865 - log\train.log - INFO -             CHECK: precision:  66.73%; recall:  75.44%; FB1:  70.82  3324
+
+2019-06-26 05:23:10,865 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  20
+
+2019-06-26 05:23:10,865 - log\train.log - INFO -             SIGNS: precision:  68.56%; recall:  81.16%; FB1:  74.33  2866
+
+2019-06-26 05:23:10,865 - log\train.log - INFO -         TREATMENT: precision:   4.08%; recall:  10.00%; FB1:   5.80  49
+
+2019-06-26 05:23:10,981 - log\train.log - INFO - new best test f1 score:70.310
+2019-06-26 05:26:50,483 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:26:54,577 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3442 phrases; correct: 2180.
+
+2019-06-26 05:26:54,577 - log\train.log - INFO - accuracy:  92.63%; precision:  63.34%; recall:  73.80%; FB1:  68.17
+
+2019-06-26 05:26:54,577 - log\train.log - INFO -              BODY: precision:  67.62%; recall:  70.81%; FB1:  69.18  1087
+
+2019-06-26 05:26:54,577 - log\train.log - INFO -             CHECK: precision:  55.97%; recall:  77.22%; FB1:  64.90  1072
+
+2019-06-26 05:26:54,577 - log\train.log - INFO -           DISEASE: precision:   2.50%; recall:   1.35%; FB1:   1.75  40
+
+2019-06-26 05:26:54,578 - log\train.log - INFO -             SIGNS: precision:  74.23%; recall:  79.25%; FB1:  76.66  1137
+
+2019-06-26 05:26:54,578 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  106
+
+2019-06-26 05:26:54,704 - log\train.log - INFO - new best dev f1 score:68.170
+2019-06-26 05:26:57,455 - log\train.log - INFO - model saved
+2019-06-26 05:26:57,455 - log\train.log - INFO - evaluate:test
+2019-06-26 05:27:06,055 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9673 phrases; correct: 6618.
+
+2019-06-26 05:27:06,055 - log\train.log - INFO - accuracy:  91.51%; precision:  68.42%; recall:  73.76%; FB1:  70.99
+
+2019-06-26 05:27:06,055 - log\train.log - INFO -              BODY: precision:  69.72%; recall:  67.85%; FB1:  68.77  3438
+
+2019-06-26 05:27:06,055 - log\train.log - INFO -             CHECK: precision:  67.49%; recall:  76.05%; FB1:  71.52  3313
+
+2019-06-26 05:27:06,055 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  21
+
+2019-06-26 05:27:06,055 - log\train.log - INFO -             SIGNS: precision:  69.51%; recall:  81.91%; FB1:  75.20  2853
+
+2019-06-26 05:27:06,055 - log\train.log - INFO -         TREATMENT: precision:   4.17%; recall:  10.00%; FB1:   5.88  48
+
+2019-06-26 05:27:06,181 - log\train.log - INFO - new best test f1 score:70.990
+2019-06-26 05:30:46,795 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:30:51,058 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3367 phrases; correct: 2221.
+
+2019-06-26 05:30:51,058 - log\train.log - INFO - accuracy:  92.88%; precision:  65.96%; recall:  75.19%; FB1:  70.27
+
+2019-06-26 05:30:51,058 - log\train.log - INFO -              BODY: precision:  69.27%; recall:  70.81%; FB1:  70.03  1061
+
+2019-06-26 05:30:51,059 - log\train.log - INFO -             CHECK: precision:  60.96%; recall:  81.98%; FB1:  69.92  1045
+
+2019-06-26 05:30:51,059 - log\train.log - INFO -           DISEASE: precision:   4.44%; recall:   2.70%; FB1:   3.36  45
+
+2019-06-26 05:30:51,059 - log\train.log - INFO -             SIGNS: precision:  77.56%; recall:  79.53%; FB1:  78.54  1092
+
+2019-06-26 05:30:51,059 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  124
+
+2019-06-26 05:30:51,179 - log\train.log - INFO - new best dev f1 score:70.270
+2019-06-26 05:30:53,946 - log\train.log - INFO - model saved
+2019-06-26 05:30:53,946 - log\train.log - INFO - evaluate:test
+2019-06-26 05:31:02,439 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9577 phrases; correct: 6701.
+
+2019-06-26 05:31:02,439 - log\train.log - INFO - accuracy:  91.83%; precision:  69.97%; recall:  74.69%; FB1:  72.25
+
+2019-06-26 05:31:02,440 - log\train.log - INFO -              BODY: precision:  70.43%; recall:  67.90%; FB1:  69.15  3406
+
+2019-06-26 05:31:02,440 - log\train.log - INFO -             CHECK: precision:  69.24%; recall:  78.71%; FB1:  73.67  3342
+
+2019-06-26 05:31:02,440 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  19
+
+2019-06-26 05:31:02,440 - log\train.log - INFO -             SIGNS: precision:  72.06%; recall:  82.03%; FB1:  76.72  2756
+
+2019-06-26 05:31:02,440 - log\train.log - INFO -         TREATMENT: precision:   3.70%; recall:  10.00%; FB1:   5.41  54
+
+2019-06-26 05:31:02,555 - log\train.log - INFO - new best test f1 score:72.250
+2019-06-26 05:34:48,848 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:34:53,105 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3377 phrases; correct: 2236.
+
+2019-06-26 05:34:53,106 - log\train.log - INFO - accuracy:  92.95%; precision:  66.21%; recall:  75.69%; FB1:  70.64
+
+2019-06-26 05:34:53,106 - log\train.log - INFO -              BODY: precision:  69.13%; recall:  71.19%; FB1:  70.15  1069
+
+2019-06-26 05:34:53,106 - log\train.log - INFO -             CHECK: precision:  60.34%; recall:  82.24%; FB1:  69.61  1059
+
+2019-06-26 05:34:53,106 - log\train.log - INFO -           DISEASE: precision:   4.00%; recall:   2.70%; FB1:   3.23  50
+
+2019-06-26 05:34:53,106 - log\train.log - INFO -             SIGNS: precision:  78.97%; recall:  80.38%; FB1:  79.66  1084
+
+2019-06-26 05:34:53,106 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  115
+
+2019-06-26 05:34:53,232 - log\train.log - INFO - new best dev f1 score:70.640
+2019-06-26 05:34:56,230 - log\train.log - INFO - model saved
+2019-06-26 05:34:56,230 - log\train.log - INFO - evaluate:test
+2019-06-26 05:35:04,714 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9539 phrases; correct: 6788.
+
+2019-06-26 05:35:04,715 - log\train.log - INFO - accuracy:  92.03%; precision:  71.16%; recall:  75.66%; FB1:  73.34
+
+2019-06-26 05:35:04,715 - log\train.log - INFO -              BODY: precision:  71.03%; recall:  68.50%; FB1:  69.74  3407
+
+2019-06-26 05:35:04,715 - log\train.log - INFO -             CHECK: precision:  70.45%; recall:  80.37%; FB1:  75.09  3354
+
+2019-06-26 05:35:04,715 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  20
+
+2019-06-26 05:35:04,715 - log\train.log - INFO -             SIGNS: precision:  73.99%; recall:  82.73%; FB1:  78.12  2707
+
+2019-06-26 05:35:04,715 - log\train.log - INFO -         TREATMENT: precision:   3.92%; recall:  10.00%; FB1:   5.63  51
+
+2019-06-26 05:35:04,853 - log\train.log - INFO - new best test f1 score:73.340
+2019-06-26 05:38:49,728 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:38:54,366 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3347 phrases; correct: 2307.
+
+2019-06-26 05:38:54,366 - log\train.log - INFO - accuracy:  93.33%; precision:  68.93%; recall:  78.10%; FB1:  73.23
+
+2019-06-26 05:38:54,366 - log\train.log - INFO -              BODY: precision:  69.64%; recall:  73.80%; FB1:  71.66  1100
+
+2019-06-26 05:38:54,367 - log\train.log - INFO -             CHECK: precision:  66.27%; recall:  85.97%; FB1:  74.85  1008
+
+2019-06-26 05:38:54,367 - log\train.log - INFO -           DISEASE: precision:   3.77%; recall:   2.70%; FB1:   3.15  53
+
+2019-06-26 05:38:54,367 - log\train.log - INFO -             SIGNS: precision:  79.91%; recall:  81.78%; FB1:  80.84  1090
+
+2019-06-26 05:38:54,367 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  96
+
+2019-06-26 05:38:54,485 - log\train.log - INFO - new best dev f1 score:73.230
+2019-06-26 05:38:57,096 - log\train.log - INFO - model saved
+2019-06-26 05:38:57,096 - log\train.log - INFO - evaluate:test
+2019-06-26 05:39:05,657 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9474 phrases; correct: 6956.
+
+2019-06-26 05:39:05,657 - log\train.log - INFO - accuracy:  92.39%; precision:  73.42%; recall:  77.53%; FB1:  75.42
+
+2019-06-26 05:39:05,657 - log\train.log - INFO -              BODY: precision:  71.80%; recall:  69.91%; FB1:  70.84  3440
+
+2019-06-26 05:39:05,657 - log\train.log - INFO -             CHECK: precision:  74.18%; recall:  81.97%; FB1:  77.88  3249
+
+2019-06-26 05:39:05,658 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  21
+
+2019-06-26 05:39:05,658 - log\train.log - INFO -             SIGNS: precision:  76.33%; recall:  85.67%; FB1:  80.73  2717
+
+2019-06-26 05:39:05,658 - log\train.log - INFO -         TREATMENT: precision:   4.26%; recall:  10.00%; FB1:   5.97  47
+
+2019-06-26 05:39:05,775 - log\train.log - INFO - new best test f1 score:75.420
+2019-06-26 05:42:53,119 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:42:57,297 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3298 phrases; correct: 2354.
+
+2019-06-26 05:42:57,297 - log\train.log - INFO - accuracy:  93.66%; precision:  71.38%; recall:  79.69%; FB1:  75.30
+
+2019-06-26 05:42:57,297 - log\train.log - INFO -              BODY: precision:  70.90%; recall:  75.34%; FB1:  73.05  1103
+
+2019-06-26 05:42:57,297 - log\train.log - INFO -             CHECK: precision:  71.60%; recall:  86.62%; FB1:  78.39  940
+
+2019-06-26 05:42:57,297 - log\train.log - INFO -           DISEASE: precision:   3.51%; recall:   2.70%; FB1:   3.05  57
+
+2019-06-26 05:42:57,297 - log\train.log - INFO -             SIGNS: precision:  82.07%; recall:  84.23%; FB1:  83.13  1093
+
+2019-06-26 05:42:57,297 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  105
+
+2019-06-26 05:42:57,415 - log\train.log - INFO - new best dev f1 score:75.300
+2019-06-26 05:43:00,182 - log\train.log - INFO - model saved
+2019-06-26 05:43:00,182 - log\train.log - INFO - evaluate:test
+2019-06-26 05:43:08,739 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9405 phrases; correct: 7006.
+
+2019-06-26 05:43:08,739 - log\train.log - INFO - accuracy:  92.56%; precision:  74.49%; recall:  78.09%; FB1:  76.25
+
+2019-06-26 05:43:08,740 - log\train.log - INFO -              BODY: precision:  72.51%; recall:  70.20%; FB1:  71.34  3420
+
+2019-06-26 05:43:08,740 - log\train.log - INFO -             CHECK: precision:  75.40%; recall:  82.04%; FB1:  78.58  3199
+
+2019-06-26 05:43:08,740 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  21
+
+2019-06-26 05:43:08,740 - log\train.log - INFO -             SIGNS: precision:  77.73%; recall:  87.24%; FB1:  82.21  2717
+
+2019-06-26 05:43:08,740 - log\train.log - INFO -         TREATMENT: precision:   4.17%; recall:  10.00%; FB1:   5.88  48
+
+2019-06-26 05:43:08,858 - log\train.log - INFO - new best test f1 score:76.250
+2019-06-26 05:46:53,651 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:46:57,841 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3301 phrases; correct: 2355.
+
+2019-06-26 05:46:57,841 - log\train.log - INFO - accuracy:  93.71%; precision:  71.34%; recall:  79.72%; FB1:  75.30
+
+2019-06-26 05:46:57,842 - log\train.log - INFO -              BODY: precision:  71.01%; recall:  75.05%; FB1:  72.97  1097
+
+2019-06-26 05:46:57,842 - log\train.log - INFO -             CHECK: precision:  71.78%; recall:  86.74%; FB1:  78.55  939
+
+2019-06-26 05:46:57,842 - log\train.log - INFO -           DISEASE: precision:   4.76%; recall:   4.05%; FB1:   4.38  63
+
+2019-06-26 05:46:57,842 - log\train.log - INFO -             SIGNS: precision:  82.78%; recall:  84.41%; FB1:  83.59  1086
+
+2019-06-26 05:46:57,842 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  116
+
+2019-06-26 05:46:57,843 - log\train.log - INFO - evaluate:test
+2019-06-26 05:47:06,357 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9336 phrases; correct: 7042.
+
+2019-06-26 05:47:06,357 - log\train.log - INFO - accuracy:  92.74%; precision:  75.43%; recall:  78.49%; FB1:  76.93
+
+2019-06-26 05:47:06,357 - log\train.log - INFO -              BODY: precision:  72.85%; recall:  69.94%; FB1:  71.36  3392
+
+2019-06-26 05:47:06,357 - log\train.log - INFO -             CHECK: precision:  76.76%; recall:  83.27%; FB1:  79.88  3189
+
+2019-06-26 05:47:06,357 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  22
+
+2019-06-26 05:47:06,357 - log\train.log - INFO -             SIGNS: precision:  79.08%; recall:  87.61%; FB1:  83.13  2682
+
+2019-06-26 05:47:06,357 - log\train.log - INFO -         TREATMENT: precision:   3.92%; recall:  10.00%; FB1:   5.63  51
+
+2019-06-26 05:47:06,476 - log\train.log - INFO - new best test f1 score:76.930
+2019-06-26 05:50:54,938 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:50:59,288 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3285 phrases; correct: 2366.
+
+2019-06-26 05:50:59,289 - log\train.log - INFO - accuracy:  93.86%; precision:  72.02%; recall:  80.09%; FB1:  75.85
+
+2019-06-26 05:50:59,289 - log\train.log - INFO -              BODY: precision:  71.17%; recall:  75.63%; FB1:  73.33  1103
+
+2019-06-26 05:50:59,289 - log\train.log - INFO -             CHECK: precision:  71.91%; recall:  87.00%; FB1:  78.74  940
+
+2019-06-26 05:50:59,289 - log\train.log - INFO -           DISEASE: precision:   4.76%; recall:   4.05%; FB1:   4.38  63
+
+2019-06-26 05:50:59,290 - log\train.log - INFO -             SIGNS: precision:  83.29%; recall:  84.69%; FB1:  83.99  1083
+
+2019-06-26 05:50:59,290 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  96
+
+2019-06-26 05:50:59,411 - log\train.log - INFO - new best dev f1 score:75.850
+2019-06-26 05:51:02,250 - log\train.log - INFO - model saved
+2019-06-26 05:51:02,250 - log\train.log - INFO - evaluate:test
+2019-06-26 05:51:10,740 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9315 phrases; correct: 7107.
+
+2019-06-26 05:51:10,741 - log\train.log - INFO - accuracy:  92.99%; precision:  76.30%; recall:  79.21%; FB1:  77.73
+
+2019-06-26 05:51:10,741 - log\train.log - INFO -              BODY: precision:  73.24%; recall:  70.65%; FB1:  71.92  3408
+
+2019-06-26 05:51:10,741 - log\train.log - INFO -             CHECK: precision:  77.88%; recall:  84.56%; FB1:  81.08  3192
+
+2019-06-26 05:51:10,741 - log\train.log - INFO -           DISEASE: precision:   0.00%; recall:   0.00%; FB1:   0.00  24
+
+2019-06-26 05:51:10,741 - log\train.log - INFO -             SIGNS: precision:  80.26%; recall:  87.69%; FB1:  83.81  2645
+
+2019-06-26 05:51:10,741 - log\train.log - INFO -         TREATMENT: precision:   4.35%; recall:  10.00%; FB1:   6.06  46
+
+2019-06-26 05:51:10,858 - log\train.log - INFO - new best test f1 score:77.730
+2019-06-26 05:54:58,764 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:55:02,992 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3283 phrases; correct: 2387.
+
+2019-06-26 05:55:02,992 - log\train.log - INFO - accuracy:  94.01%; precision:  72.71%; recall:  80.81%; FB1:  76.54
+
+2019-06-26 05:55:02,992 - log\train.log - INFO -              BODY: precision:  71.45%; recall:  76.69%; FB1:  73.98  1114
+
+2019-06-26 05:55:02,992 - log\train.log - INFO -             CHECK: precision:  72.45%; recall:  87.00%; FB1:  79.06  933
+
+2019-06-26 05:55:02,992 - log\train.log - INFO -           DISEASE: precision:   4.48%; recall:   4.05%; FB1:   4.26  67
+
+2019-06-26 05:55:02,992 - log\train.log - INFO -             SIGNS: precision:  84.52%; recall:  85.63%; FB1:  85.07  1079
+
+2019-06-26 05:55:02,993 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  90
+
+2019-06-26 05:55:03,114 - log\train.log - INFO - new best dev f1 score:76.540
+2019-06-26 05:55:05,749 - log\train.log - INFO - model saved
+2019-06-26 05:55:05,749 - log\train.log - INFO - evaluate:test
+2019-06-26 05:55:14,299 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9304 phrases; correct: 7171.
+
+2019-06-26 05:55:14,299 - log\train.log - INFO - accuracy:  93.22%; precision:  77.07%; recall:  79.93%; FB1:  78.47
+
+2019-06-26 05:55:14,299 - log\train.log - INFO -              BODY: precision:  73.63%; recall:  71.44%; FB1:  72.52  3428
+
+2019-06-26 05:55:14,299 - log\train.log - INFO -             CHECK: precision:  79.06%; recall:  85.00%; FB1:  81.92  3161
+
+2019-06-26 05:55:14,299 - log\train.log - INFO -           DISEASE: precision:   3.57%; recall:   1.72%; FB1:   2.33  28
+
+2019-06-26 05:55:14,300 - log\train.log - INFO -             SIGNS: precision:  81.19%; recall:  88.60%; FB1:  84.73  2642
+
+2019-06-26 05:55:14,300 - log\train.log - INFO -         TREATMENT: precision:   4.44%; recall:  10.00%; FB1:   6.15  45
+
+2019-06-26 05:55:14,428 - log\train.log - INFO - new best test f1 score:78.470
+2019-06-26 05:59:03,322 - log\train.log - INFO - evaluate:dev
+2019-06-26 05:59:07,645 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3276 phrases; correct: 2393.
+
+2019-06-26 05:59:07,645 - log\train.log - INFO - accuracy:  94.03%; precision:  73.05%; recall:  81.01%; FB1:  76.82
+
+2019-06-26 05:59:07,646 - log\train.log - INFO -              BODY: precision:  71.88%; recall:  76.59%; FB1:  74.16  1106
+
+2019-06-26 05:59:07,646 - log\train.log - INFO -             CHECK: precision:  73.80%; recall:  87.00%; FB1:  79.86  916
+
+2019-06-26 05:59:07,646 - log\train.log - INFO -           DISEASE: precision:   4.41%; recall:   4.05%; FB1:   4.23  68
+
+2019-06-26 05:59:07,646 - log\train.log - INFO -             SIGNS: precision:  85.25%; recall:  86.29%; FB1:  85.77  1078
+
+2019-06-26 05:59:07,646 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  108
+
+2019-06-26 05:59:07,772 - log\train.log - INFO - new best dev f1 score:76.820
+2019-06-26 05:59:10,513 - log\train.log - INFO - model saved
+2019-06-26 05:59:10,513 - log\train.log - INFO - evaluate:test
+2019-06-26 05:59:19,022 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9238 phrases; correct: 7193.
+
+2019-06-26 05:59:19,023 - log\train.log - INFO - accuracy:  93.32%; precision:  77.86%; recall:  80.17%; FB1:  79.00
+
+2019-06-26 05:59:19,023 - log\train.log - INFO -              BODY: precision:  74.12%; recall:  71.75%; FB1:  72.92  3420
+
+2019-06-26 05:59:19,023 - log\train.log - INFO -             CHECK: precision:  80.21%; recall:  84.93%; FB1:  82.50  3113
+
+2019-06-26 05:59:19,023 - log\train.log - INFO -           DISEASE: precision:   3.45%; recall:   1.72%; FB1:   2.30  29
+
+2019-06-26 05:59:19,023 - log\train.log - INFO -             SIGNS: precision:  82.15%; recall:  89.14%; FB1:  85.50  2627
+
+2019-06-26 05:59:19,023 - log\train.log - INFO -         TREATMENT: precision:   4.08%; recall:  10.00%; FB1:   5.80  49
+
+2019-06-26 05:59:19,144 - log\train.log - INFO - new best test f1 score:79.000
+2019-06-26 06:03:07,853 - log\train.log - INFO - evaluate:dev
+2019-06-26 06:03:12,110 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3273 phrases; correct: 2403.
+
+2019-06-26 06:03:12,110 - log\train.log - INFO - accuracy:  94.20%; precision:  73.42%; recall:  81.35%; FB1:  77.18
+
+2019-06-26 06:03:12,110 - log\train.log - INFO -              BODY: precision:  71.45%; recall:  77.17%; FB1:  74.20  1121
+
+2019-06-26 06:03:12,110 - log\train.log - INFO -             CHECK: precision:  73.99%; recall:  87.13%; FB1:  80.02  915
+
+2019-06-26 06:03:12,110 - log\train.log - INFO -           DISEASE: precision:   4.17%; recall:   4.05%; FB1:   4.11  72
+
+2019-06-26 06:03:12,110 - log\train.log - INFO -             SIGNS: precision:  85.45%; recall:  86.57%; FB1:  86.01  1079
+
+2019-06-26 06:03:12,110 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  86
+
+2019-06-26 06:03:12,251 - log\train.log - INFO - new best dev f1 score:77.180
+2019-06-26 06:03:15,043 - log\train.log - INFO - model saved
+2019-06-26 06:03:15,044 - log\train.log - INFO - evaluate:test
+2019-06-26 06:03:23,544 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9226 phrases; correct: 7242.
+
+2019-06-26 06:03:23,544 - log\train.log - INFO - accuracy:  93.47%; precision:  78.50%; recall:  80.72%; FB1:  79.59
+
+2019-06-26 06:03:23,544 - log\train.log - INFO -              BODY: precision:  74.85%; recall:  72.77%; FB1:  73.79  3435
+
+2019-06-26 06:03:23,544 - log\train.log - INFO -             CHECK: precision:  80.84%; recall:  85.27%; FB1:  83.00  3101
+
+2019-06-26 06:03:23,544 - log\train.log - INFO -           DISEASE: precision:   3.03%; recall:   1.72%; FB1:   2.20  33
+
+2019-06-26 06:03:23,544 - log\train.log - INFO -             SIGNS: precision:  82.83%; recall:  89.26%; FB1:  85.92  2609
+
+2019-06-26 06:03:23,544 - log\train.log - INFO -         TREATMENT: precision:   4.17%; recall:  10.00%; FB1:   5.88  48
+
+2019-06-26 06:03:23,665 - log\train.log - INFO - new best test f1 score:79.590
+2019-06-26 06:07:15,595 - log\train.log - INFO - evaluate:dev
+2019-06-26 06:07:19,849 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3304 phrases; correct: 2469.
+
+2019-06-26 06:07:19,849 - log\train.log - INFO - accuracy:  94.48%; precision:  74.73%; recall:  83.58%; FB1:  78.91
+
+2019-06-26 06:07:19,849 - log\train.log - INFO -              BODY: precision:  73.84%; recall:  82.66%; FB1:  78.00  1162
+
+2019-06-26 06:07:19,849 - log\train.log - INFO -             CHECK: precision:  73.89%; recall:  87.77%; FB1:  80.24  923
+
+2019-06-26 06:07:19,849 - log\train.log - INFO -           DISEASE: precision:   3.95%; recall:   4.05%; FB1:   4.00  76
+
+2019-06-26 06:07:19,849 - log\train.log - INFO -             SIGNS: precision:  85.90%; recall:  86.95%; FB1:  86.42  1078
+
+2019-06-26 06:07:19,849 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  65
+
+2019-06-26 06:07:19,979 - log\train.log - INFO - new best dev f1 score:78.910
+2019-06-26 06:07:22,788 - log\train.log - INFO - model saved
+2019-06-26 06:07:22,788 - log\train.log - INFO - evaluate:test
+2019-06-26 06:07:31,313 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9284 phrases; correct: 7348.
+
+2019-06-26 06:07:31,313 - log\train.log - INFO - accuracy:  93.70%; precision:  79.15%; recall:  81.90%; FB1:  80.50
+
+2019-06-26 06:07:31,313 - log\train.log - INFO -              BODY: precision:  75.73%; recall:  74.44%; FB1:  75.08  3473
+
+2019-06-26 06:07:31,313 - log\train.log - INFO -             CHECK: precision:  81.12%; recall:  86.39%; FB1:  83.68  3131
+
+2019-06-26 06:07:31,313 - log\train.log - INFO -           DISEASE: precision:  14.29%; recall:   8.62%; FB1:  10.75  35
+
+2019-06-26 06:07:31,313 - log\train.log - INFO -             SIGNS: precision:  83.43%; recall:  89.63%; FB1:  86.42  2601
+
+2019-06-26 06:07:31,314 - log\train.log - INFO -         TREATMENT: precision:   6.82%; recall:  15.00%; FB1:   9.37  44
+
+2019-06-26 06:07:31,434 - log\train.log - INFO - new best test f1 score:80.500
+2019-06-26 06:11:23,842 - log\train.log - INFO - evaluate:dev
+2019-06-26 06:11:28,208 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3301 phrases; correct: 2476.
+
+2019-06-26 06:11:28,209 - log\train.log - INFO - accuracy:  94.53%; precision:  75.01%; recall:  83.82%; FB1:  79.17
+
+2019-06-26 06:11:28,209 - log\train.log - INFO -              BODY: precision:  73.64%; recall:  82.37%; FB1:  77.76  1161
+
+2019-06-26 06:11:28,209 - log\train.log - INFO -             CHECK: precision:  74.43%; recall:  88.03%; FB1:  80.66  919
+
+2019-06-26 06:11:28,209 - log\train.log - INFO -           DISEASE: precision:   5.06%; recall:   5.41%; FB1:   5.23  79
+
+2019-06-26 06:11:28,209 - log\train.log - INFO -             SIGNS: precision:  86.79%; recall:  87.61%; FB1:  87.20  1075
+
+2019-06-26 06:11:28,209 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  67
+
+2019-06-26 06:11:28,333 - log\train.log - INFO - new best dev f1 score:79.170
+2019-06-26 06:11:31,199 - log\train.log - INFO - model saved
+2019-06-26 06:11:31,199 - log\train.log - INFO - evaluate:test
+2019-06-26 06:11:39,723 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9263 phrases; correct: 7363.
+
+2019-06-26 06:11:39,723 - log\train.log - INFO - accuracy:  93.77%; precision:  79.49%; recall:  82.07%; FB1:  80.76
+
+2019-06-26 06:11:39,723 - log\train.log - INFO -              BODY: precision:  75.74%; recall:  74.30%; FB1:  75.01  3466
+
+2019-06-26 06:11:39,724 - log\train.log - INFO -             CHECK: precision:  81.44%; recall:  86.56%; FB1:  83.92  3125
+
+2019-06-26 06:11:39,724 - log\train.log - INFO -           DISEASE: precision:  13.51%; recall:   8.62%; FB1:  10.53  37
+
+2019-06-26 06:11:39,724 - log\train.log - INFO -             SIGNS: precision:  84.33%; recall:  90.25%; FB1:  87.19  2591
+
+2019-06-26 06:11:39,724 - log\train.log - INFO -         TREATMENT: precision:   6.82%; recall:  15.00%; FB1:   9.37  44
+
+2019-06-26 06:11:39,840 - log\train.log - INFO - new best test f1 score:80.760
+2019-06-26 06:15:35,602 - log\train.log - INFO - iteration:101 step:0/1, NER loss:173840.703125
+2019-06-26 06:15:35,603 - log\train.log - INFO - evaluate:dev
+2019-06-26 06:15:39,834 - log\train.log - INFO - processed 31386 tokens with 2954 phrases; found: 3274 phrases; correct: 2465.
+
+2019-06-26 06:15:39,834 - log\train.log - INFO - accuracy:  94.53%; precision:  75.29%; recall:  83.45%; FB1:  79.16
+
+2019-06-26 06:15:39,834 - log\train.log - INFO -              BODY: precision:  72.53%; recall:  80.64%; FB1:  76.37  1154
+
+2019-06-26 06:15:39,834 - log\train.log - INFO -             CHECK: precision:  75.72%; recall:  87.90%; FB1:  81.36  902
+
+2019-06-26 06:15:39,834 - log\train.log - INFO -           DISEASE: precision:   8.86%; recall:   9.46%; FB1:   9.15  79
+
+2019-06-26 06:15:39,835 - log\train.log - INFO -             SIGNS: precision:  87.42%; recall:  88.08%; FB1:  87.75  1073
+
+2019-06-26 06:15:39,835 - log\train.log - INFO -         TREATMENT: precision:   0.00%; recall:   0.00%; FB1:   0.00  66
+
+2019-06-26 06:15:39,836 - log\train.log - INFO - evaluate:test
+2019-06-26 06:15:48,398 - log\train.log - INFO - processed 62717 tokens with 8972 phrases; found: 9207 phrases; correct: 7361.
+
+2019-06-26 06:15:48,398 - log\train.log - INFO - accuracy:  93.81%; precision:  79.95%; recall:  82.04%; FB1:  80.98
+
+2019-06-26 06:15:48,399 - log\train.log - INFO -              BODY: precision:  76.09%; recall:  74.41%; FB1:  75.24  3455
+
+2019-06-26 06:15:48,399 - log\train.log - INFO -             CHECK: precision:  82.22%; recall:  86.05%; FB1:  84.10  3077
+
+2019-06-26 06:15:48,399 - log\train.log - INFO -           DISEASE: precision:  15.79%; recall:  10.34%; FB1:  12.50  38
+
+2019-06-26 06:15:48,399 - log\train.log - INFO -             SIGNS: precision:  84.64%; recall:  90.58%; FB1:  87.51  2591
+
+2019-06-26 06:15:48,399 - log\train.log - INFO -         TREATMENT: precision:   6.52%; recall:  15.00%; FB1:   9.09  46
+
+2019-06-26 06:15:48,520 - log\train.log - INFO - new best test f1 score:80.980
