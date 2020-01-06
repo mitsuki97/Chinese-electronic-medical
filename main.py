@@ -13,7 +13,7 @@ from loader import char_mapping, tag_mapping
 from loader import augment_with_pretrained, prepare_dataset
 from utils import get_logger, make_path, clean, create_model, save_model
 from utils import print_config, save_config, load_config, test_ner
-from data_utils import load_word2vec, create_input, input_from_line, BatchManager
+from data_utils import load_word2vec, input_from_line, BatchManager
 
 flags = tf.app.flags
 # https://blog.csdn.net/dcrmg/article/details/79658725

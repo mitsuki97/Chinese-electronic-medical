@@ -152,21 +152,6 @@ def get_seg_features(string):
             seg_feature.extend(tmp)
     return seg_feature
 
-
-def create_input(data):
-    """
-    Take sentence data and return an input for
-    the training or the evaluation function.
-    获取句子数据并返回输入
-     培训或评估功能。
-    """
-    inputs = list()
-    inputs.append(data['chars'])
-    inputs.append(data["segs"])
-    inputs.append(data['tags'])
-    return inputs
-
-
 def load_word2vec(emb_path, id_to_word, word_dim, old_weights):
     """
     Load word embedding from pre-trained file

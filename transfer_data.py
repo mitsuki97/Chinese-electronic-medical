@@ -22,7 +22,7 @@ from collections import Counter
 
 class TransferData:
     def __init__(self):
-        # /home/chenhang/workplace/pycharmprojects/Chinese-electronic-medical
+        # cur = /home/chenhang/workplace/pycharmprojects/Chinese-electronic-medical
         cur = '/'.join(os.path.abspath(__file__).split('/')[:-1])
         self.label_dict = {
                       '检查和检验': 'CHECK',
@@ -51,7 +51,6 @@ class TransferData:
 
     def transfer(self):
         f = open(self.train_filepath, 'w+',encoding="utf-8")
-        count = 0
         for root,dirs,files in os.walk(self.origin_path):
 
             """
@@ -84,10 +83,10 @@ class TransferData:
                 if 'original' not in filepath:
                     continue
                 label_filepath = filepath.replace('.txtoriginal','')
-                """
-                    filepath: /home/chenhang/workplace/pycharmprojects/Chinese-electronic-medical/data_origin/data_origin/诊疗经过/诊疗经过-54.txtoriginal.txt 	
-                     
+                """                     
                     label_filepath: /home/chenhang/workplace/pycharmprojects/Chinese-electronic-medical/data_origin/data_origin/诊疗经过/诊疗经过-54.txt
+                    
+                    filepath: /home/chenhang/workplace/pycharmprojects/Chinese-electronic-medical/data_origin/data_origin/诊疗经过/诊疗经过-54.txtoriginal.txt 	
                 """
                 print(filepath, '\t', label_filepath)
                 content = open(filepath,'r',encoding='utf8').read().strip()
@@ -113,6 +112,28 @@ class TransferData:
         f.close()
         return
 
+    def segment(self):
+        f = open(self.train_filepath, 'r+', encoding="utf-8")
+        list = f.readlines()
+        flag = round(len(list)/10)
+        example_dev = list[0:flag]
+        example_test = list[flag:flag*3]
+        example_train = list[flag*3:]
+
+        dev = open('dev.dev','w+',encoding='utf-8')
+        test = open('test.test','w+',encoding='utf-8')
+        train = open('train.train','w+',encoding='utf-8')
+
+        for d in example_dev:
+            dev.write(d)
+        for t in example_test:
+            test.write(t)
+        for tr in example_train:
+            train.write(tr)
+        print("分割train.txt完毕")
+
+
 if __name__ == '__main__':
     handler = TransferData()
-    train_datas = handler.transfer()
+    # train_datas = handler.transfer()
+    handler.segment()
